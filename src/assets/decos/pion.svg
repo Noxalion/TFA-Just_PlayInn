@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 279 449">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Dégradé_sans_nom_205-4);
+      }
+
+      .cls-2 {
+        fill: url(#Dégradé_sans_nom_205-3);
+      }
+
+      .cls-3 {
+        fill: url(#Dégradé_sans_nom_205-5);
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #260f26;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: url(#Dégradé_sans_nom_205);
+      }
+
+      .cls-6 {
+        fill: url(#Dégradé_sans_nom_205-6);
+      }
+
+      .cls-7 {
+        fill: url(#Dégradé_sans_nom_205-2);
+      }
+    </style>
+    <linearGradient id="Dégradé_sans_nom_205" data-name="Dégradé sans nom 205" x1="50.05" y1="477.77" x2="380.12" y2="146.49" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffcf9"/>
+      <stop offset="0" stop-color="#fcfaf8"/>
+      <stop offset=".19" stop-color="#b7c8ea"/>
+      <stop offset=".33" stop-color="#8ca9e1"/>
+      <stop offset=".39" stop-color="#7c9ede"/>
+      <stop offset=".57" stop-color="#6b94de"/>
+      <stop offset=".78" stop-color="#608dde"/>
+      <stop offset="1" stop-color="#5d8bde"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_205-2" data-name="Dégradé sans nom 205" x1="24.8" y1="452.62" x2="354.87" y2="121.33" xlink:href="#Dégradé_sans_nom_205"/>
+    <linearGradient id="Dégradé_sans_nom_205-3" data-name="Dégradé sans nom 205" x1="5.89" y1="433.77" x2="335.96" y2="102.49" xlink:href="#Dégradé_sans_nom_205"/>
+    <linearGradient id="Dégradé_sans_nom_205-4" data-name="Dégradé sans nom 205" x1="-41.78" y1="386.28" x2="288.29" y2="55" xlink:href="#Dégradé_sans_nom_205"/>
+    <linearGradient id="Dégradé_sans_nom_205-5" data-name="Dégradé sans nom 205" x1="-79.44" y1="348.76" x2="250.63" y2="17.48" xlink:href="#Dégradé_sans_nom_205"/>
+    <linearGradient id="Dégradé_sans_nom_205-6" data-name="Dégradé sans nom 205" x1="-110.95" y1="317.36" x2="219.12" y2="-13.92" xlink:href="#Dégradé_sans_nom_205"/>
+  </defs>
+  <g id="pion">
+    <ellipse class="cls-5" cx="139" cy="388.5" rx="139" ry="60.5"/>
+    <ellipse class="cls-7" cx="139" cy="338" rx="139" ry="87"/>
+    <path class="cls-2" d="M232.45,303.37c.38,31.13-42.01,58.13-93.62,58.13s-93-24-93.28-58.13c-.31-37.98,41.84-68.77,93.45-68.77s92.99,30.79,93.45,68.77Z"/>
+    <path class="cls-1" d="M190.02,261.35c0,14.44-22.78,26.15-50.89,26.15s-50.88-11.71-50.88-26.15h0s-.26,0-.26,0v-119.34h102v118.54c.02,.27,.03,.54,.03,.81Z"/>
+    <ellipse class="cls-3" cx="139" cy="129.52" rx="72.4" ry="45.52"/>
+    <ellipse class="cls-6" cx="139" cy="66.5" rx="72.4" ry="66.5"/>
+    <path class="cls-4" d="M272.5,313.68c3.58,7.72,5.5,15.88,5.5,24.32,0,48.05-62.23,87-139,87-35.84,0-68.52-8.49-93.17-22.44"/>
+    <path class="cls-4" d="M203.79,253.93c17.51,12.5,28.43,30.03,28.66,49.44,.38,31.13-42.01,58.13-93.62,58.13-27.23,0-51.62-6.68-68.62-18.01"/>
+    <path class="cls-4" d="M189.98,229.92v30.63c.02,.27,.03,.54,.03,.81,0,14.44-22.78,26.15-50.89,26.15-10.03,0-19.38-1.49-27.26-4.07"/>
+    <path class="cls-4" d="M209.2,140.69c-7.92,19.74-36.35,34.35-70.2,34.35-8.18,0-16.04-.85-23.38-2.42"/>
+    <path class="cls-4" d="M210.83,74.85c-4.47,32.79-34.93,58.15-71.83,58.15-8.76,0-17.15-1.43-24.92-4.05"/>
+  </g>
+</svg>

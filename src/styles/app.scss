@@ -34,6 +34,8 @@ body{
     font-family:"congenial-light";
     font-size: 18px;
     line-height: 1.4;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .title{
@@ -54,6 +56,37 @@ body{
     &--home{
         font-family:"ccbiffbamboom";
         font-size: 24px;
+        text-align: center;
+
+        padding-bottom: 28px;
+        background-image: url(../assets/images/sections/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+}
+
+.project-home{
+    position: relative;
+    width: 100%;
+    left: -24px;
+    right: -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    margin-top: 72px;
+    height: 556px;
+    background-image: url(../assets/images/sections/accueil_tell.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 140px;
+    background-size: 115%;
+    
+
+    &__title{
+        display: block;
+        font-size: 0;
+        width: 320px;
+        height: 158px;
+        background-image: url(../assets/images/sections/titre_tell.svg);
     }
 }
 
@@ -80,8 +113,40 @@ body{
     }
 }
 
+.menu{
+    position: fixed;
+    width: calc(100% - 48px);
+    height: calc(100% - 36px);
+    top: 0;
+    left: 0;
+    padding: 18px 24px;
 
+    &__btn{
+        position: absolute;
+        right: 24px;
+        font-size: 0;
+        border: none;
+        width: 69px;
+        height: 69px;
 
+        &__svg{
+            filter: drop-shadow(-3px 6px 0px var(--color-text-highlight));
+        }
+
+        &--close{
+            display: none;
+            pointer-events: none;
+        }
+    }
+
+    &__content{
+        position: relative;
+        margin-top: 28px;
+        width: 100%;
+        height: 100%;
+        left: calc(100% + 48px);
+    }
+}
 
 
 /** Tablet **/

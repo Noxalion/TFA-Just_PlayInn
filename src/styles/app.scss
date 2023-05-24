@@ -1,3 +1,7 @@
+
+@import 'utils/variables';
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,31 +11,13 @@ a{
     text-decoration: none;
 }
 
-/* couleurs */
-
-:root{
-    --color-bg: #FFFCF9;
-    --color-text: #4E364E;
-    --color-text-highlight: #260F26;
-    --color-title: #934EBF;
-    --color-title-darker: #7B429F;
-    --color-button: #616CD0;
-    --color-bg-purple: #DFB0FF;
-    --color-bg-blue: #F0EFFF;
-    --color-text-blue: #3C4485;
-    --color-title-blue: #3F49A6;
-    --color-link: #895F89;
-    --color-link-active: #aa68aa;
-}
-
-
 
 /** Mobile **/
 
 body{
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    font-family:"congenial-light";
+    background-color: $color-bg;
+    color: $color-text;
+    font-family: $text-simple;
     font-size: 18px;
     line-height: 1.4;
     padding-left: 24px;
@@ -41,20 +27,20 @@ body{
 .title{
     font-size: 36px;
     line-height: 40px;
-    font-family: "congenial";
+    font-family: $text-specific;
     font-weight: 800;
-    color: var(--color-title);
+    color: $color-title;
 
     &--dark{
-        color: var(--color-title-darker);
+        color: $color-title-darker;
     }
 
     &--darker{
-        color: var(--color-text-highlight);
+        color: $color-text-highlight;
     }
 
     &--home{
-        font-family:"ccbiffbamboom";
+        font-family: $text-home;
         font-size: 24px;
         text-align: center;
 
@@ -87,29 +73,30 @@ body{
         width: 320px;
         height: 158px;
         background-image: url(../assets/images/sections/titre_tell.svg);
+        background-repeat: no-repeat;
     }
 }
 
 .highlight_Paragraph{
-    font-family: "congenial";
-    color: var(--color-text-highlight);
+    font-family: $text-specific;
+    color: $color-text-highlight;
     font-size: 22px;
 
     &--purple{
-        color: var(--color-title);
+        color: $color-title;
     }
 
     &--purpleDarker{
-        color: var(--color-title-darker);
+        color: $color-title-darker;
     }
 }
 
 .link{
     font-weight: 700;
-    color: var(--color-link);
+    color: $color-link;
 
     &:hover, &:focus, &:active{
-        color: var(--color-link-active);
+        color: $color-link-active;
     }
 }
 
@@ -130,7 +117,7 @@ body{
         height: 69px;
 
         &__svg{
-            filter: drop-shadow(-3px 6px 0px var(--color-text-highlight));
+            filter: drop-shadow(-3px 6px 0px $color-text-highlight);
         }
 
         &--close{

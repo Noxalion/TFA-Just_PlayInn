@@ -69,12 +69,13 @@ body{
 
 .btn{
     border: none;
-    padding: 20px 10px;
+    padding: 20px 24px;
     font-family: $text-specific;
     font-weight: 700;
     color: $color-bg;
-    background: $color-button;
+    background: none;
     font-size: 20px;
+    border-image: url("../assets/images/sections/hexagon.svg") 30 fill/ 24px round;
 }
 
 

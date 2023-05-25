@@ -168,12 +168,15 @@ body {
 
 .btn {
   border: none;
-  padding: 20px 10px;
+  padding: 20px 24px;
   font-family: "congenial";
   font-weight: 700;
   color: #FFFCF9;
-  background: #616CD0;
+  background: none;
   font-size: 20px;
+  -o-border-image: url("../assets/images/sections/polygone.svg") 28 fill/24px round;
+     border-image: url("../assets/images/sections/polygone.svg") 28 fill/24px round;
+  filter: drop-shadow(-3px 3px 0px #260F26);
 }
 
 /** Tablet **/

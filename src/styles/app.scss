@@ -75,7 +75,10 @@ body{
     color: $color-bg;
     background: none;
     font-size: 20px;
-    border-image: url("../assets/images/sections/hexagon.svg") 30 fill/ 24px round;
+    // border-image: url("../assets/images/sections/hexagon.svg") 30 fill/ 24px round;
+
+    border-image: url("../assets/images/sections/polygone.svg") 28 fill/ 24px round;
+    filter: drop-shadow(-3px 3px 0px $color-text-highlight);
 }
 
 

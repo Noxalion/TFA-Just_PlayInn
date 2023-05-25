@@ -2,7 +2,7 @@
 
 //burgermenu
 let burgerMenu = document.querySelector(".menu__btn");
-let menu = document.querySelector(".menu__content");
+let menu = document.querySelector(".menu");
 if (burgerMenu && menu) {
     burgerMenu.addEventListener("click", burgerStatus);
 }

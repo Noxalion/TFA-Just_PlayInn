@@ -72,20 +72,37 @@ body{
 .btn{
     cursor: pointer;
     border: none;
-    padding: 20px 24px;
-    font-family: $text-specific;
-    font-weight: 700;
-    color: $color-bg;
-    background: none;
-    font-size: 20px;
+    
+    &--details{
 
-    border-image: url("../assets/images/sections/polygone.svg") 28 fill/ 24px round;
-    filter: drop-shadow(-3px 3px 0px $color-text-highlight);
+        &Open{
+            padding: 20px 24px;
+            font-family: $text-specific;
+            font-weight: 700;
+            color: $color-bg;
+            font-size: 20px;
+            background: none;
+            border-image: url("../assets/images/sections/polygone.svg") 28 fill/ 24px round;
+            filter: drop-shadow(-3px 3px 0px $color-text-highlight);
+        
+            &:hover, &:focus, &:active{
+                border-image: url("../assets/images/sections/polygone-hover.svg") 28 fill/ 24px round;
+                color: $color-bg-blue;
+            }
+        }
+        
+        &Close{
+            font-size: 0;
+            width: 58px;
+            height: 58px;
+            border: none;
+            background-color: $color-title-darker;
 
-    &:hover, &:focus, &:active{
-        border-image: url("../assets/images/sections/polygone-hover.svg") 28 fill/ 24px round;
-        color: $color-bg-blue;
-    }
+            &:hover, &:focus, &:active{
+                background-color: $color-title;
+            }
+        }
+    } 
 }
 
 

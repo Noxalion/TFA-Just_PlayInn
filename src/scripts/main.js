@@ -10,10 +10,32 @@ if (burgerMenu && menu) {
 function burgerStatus(){
     menu.classList.toggle("open");
 }
-    //cette partie, c'est pour fermer le menu si on est dans une one-page
+
 let anchor = document.querySelectorAll(".anchor");
 if (anchor) {
     for (let i = 0; i < anchor.length; i++) {
         anchor[i].addEventListener("click", burgerStatus);
     }
+}
+
+
+//déploiement des zones de détails
+let zonesDetails = document.querySelectorAll(".details");
+let btnsDetails = document.querySelectorAll(".btn--detailsOpen");
+let btnsFerme = document.querySelectorAll(".btn--detailsClose");
+if (zonesDetails && btnsDetails && btnsFerme) {
+    for (let i = 0; i < btnsDetails.length; i++) {
+        //pour ouvrir
+        btnsDetails[i].addEventListener("click", () => {
+            zoneDetailOpen(i);
+        });
+        //pour fermer
+        btnsFerme[i].addEventListener("click", () => {
+            zoneDetailOpen(i);
+        }); 
+    }
+}
+
+function zoneDetailOpen(el){
+    zonesDetails[el].classList.toggle("open");
 }

@@ -122,7 +122,13 @@
   padding-left: 24px;
   padding-right: 24px;
   background: #F0EFFF;
+  pointer-events: none;
   transform: translateX(calc(100% + 48px));
+  transition: 0.8s cubic-bezier(0.11, 0.99, 0.49, 1);
+}
+.details.open {
+  pointer-events: all;
+  transform: translateX(0);
   transition: 0.8s cubic-bezier(0.11, 0.99, 0.49, 1);
 }
 
@@ -209,20 +215,32 @@ body {
 .btn {
   cursor: pointer;
   border: none;
+}
+.btn--detailsOpen {
   padding: 20px 24px;
   font-family: "congenial";
   font-weight: 700;
   color: #FFFCF9;
-  background: none;
   font-size: 20px;
+  background: none;
   -o-border-image: url("../assets/images/sections/polygone.svg") 28 fill/24px round;
      border-image: url("../assets/images/sections/polygone.svg") 28 fill/24px round;
   filter: drop-shadow(-3px 3px 0px #260F26);
 }
-.btn:hover, .btn:focus, .btn:active {
+.btn--detailsOpen:hover, .btn--detailsOpen:focus, .btn--detailsOpen:active {
   -o-border-image: url("../assets/images/sections/polygone-hover.svg") 28 fill/24px round;
      border-image: url("../assets/images/sections/polygone-hover.svg") 28 fill/24px round;
   color: #F0EFFF;
+}
+.btn--detailsClose {
+  font-size: 0;
+  width: 58px;
+  height: 58px;
+  border: none;
+  background-color: #7B429F;
+}
+.btn--detailsClose:hover, .btn--detailsClose:focus, .btn--detailsClose:active {
+  background-color: #934EBF;
 }
 
 /** Tablet **/

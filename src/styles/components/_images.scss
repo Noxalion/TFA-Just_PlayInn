@@ -1,0 +1,27 @@
+/* styles et modificateurs des images */
+
+.imgDeco--tell{
+    margin-left: 96px;
+    margin-right: 96px;
+}
+
+.chargeContainer{
+    position: relative;
+    width: calc(100% + 24px);
+    overflow: hidden;
+
+    &__fond{
+        position: absolute;
+        background-color: $color-bg-purple;
+        width: 100%;
+        height: 62%;
+        top: 38%;
+        opacity: 30%;
+        border-radius: 72px 0 0 72px;
+    }
+}
+
+.imgCharge{
+    width: calc(100% + 32px);
+    transform: scale(-1,1) translateX(-24px);
+}

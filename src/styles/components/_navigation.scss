@@ -2,6 +2,7 @@
 
 .menu{
     position: fixed;
+    z-index: 20;
     width: calc(100% - 48px);
     height: calc(100% - 36px);
     top: 0;
@@ -15,13 +16,15 @@
         right: 24px;
         font-size: 0;
         border: none;
-        width: 69px;
-        height: 69px;
+        width: 58px;
+        height: 58px;
         background: none;
         z-index: 10;
 
         &__svg{
-            filter: drop-shadow(-3px 6px 0px $color-text-highlight);
+            filter: drop-shadow(-3px 4px 0px $color-text-highlight);
+            width: 58px;
+            height: 58px;
         }
 
         &--close{

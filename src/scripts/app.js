@@ -89,11 +89,21 @@ function swapCards(direction) {
 		}
 	}
 
-    function checkCardsSize() {
-        if (currentCardEl.classList.contains("cards__card--smaller")) {
-            cardsContainerEl.classList.add("cards--smaller");
-        }else{
-            cardsContainerEl.classList.remove("cards--smaller");
+    function checkCardsSize() {    
+        if (direction === "right") {
+            if (nextCardEl.classList.contains("cards__card--smaller")) {
+                cardsContainerEl.classList.add("cards--smaller");
+            }else{
+                cardsContainerEl.classList.remove("cards--smaller");
+            }
+    
+        } else if (direction === "left") {
+            if (previousCardEl.classList.contains("cards__card--smaller")) {
+                cardsContainerEl.classList.add("cards--smaller");
+            }else{
+                cardsContainerEl.classList.remove("cards--smaller");
+            }
         }
     }
 }
+

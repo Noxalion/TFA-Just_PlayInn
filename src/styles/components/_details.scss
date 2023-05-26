@@ -68,7 +68,7 @@
     grid-template-rows: 1fr;
 
     &--smaller{
-        height: 50%;
+        height: 51%;
     }
 
     &__card{
@@ -91,4 +91,9 @@
     .next--card{
         transform: translateX(calc(100% + 24px));
     }
+}
+
+.spaceForArrow{
+    margin-top: 24px;
+    margin-bottom: 72px;
 }

@@ -189,7 +189,7 @@
   grid-template-rows: 1fr;
 }
 .cards--smaller {
-  height: 50%;
+  height: 51%;
 }
 .cards__card {
   grid-row: 1;
@@ -207,6 +207,11 @@
 }
 .cards .next--card {
   transform: translateX(calc(100% + 24px));
+}
+
+.spaceForArrow {
+  margin-top: 24px;
+  margin-bottom: 72px;
 }
 
 /* grille */ /* styles et modificateurs des images */

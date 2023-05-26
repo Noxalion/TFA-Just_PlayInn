@@ -182,6 +182,33 @@
   padding-top: 36px;
 }
 
+.cards {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.cards--smaller {
+  height: 50%;
+}
+.cards__card {
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+  opacity: 0;
+  transition: 0.4s;
+}
+.cards .current--card {
+  opacity: 1;
+  transform: translateX(0);
+}
+.cards .previous--card {
+  transform: translateX(calc(-100% - 24px));
+}
+.cards .next--card {
+  transform: translateX(calc(100% + 24px));
+}
+
 /* grille */ /* styles et modificateurs des images */
 .imgDeco {
   margin-left: 96px;
@@ -289,6 +316,7 @@ body {
 }
 .btn--detailsClose {
   position: sticky;
+  z-index: 10;
   top: 0px;
   margin-left: calc(100% - 72px);
   font-size: 0;

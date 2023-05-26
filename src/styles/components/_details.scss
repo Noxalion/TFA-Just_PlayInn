@@ -60,3 +60,35 @@
     border-radius: 3px;
     padding-top: 36px;
 }
+
+.cards{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    &--smaller{
+        height: 50%;
+    }
+
+    &__card{
+        grid-row: 1;
+        grid-column: 1;
+        position: relative;
+        opacity: 0;
+        transition: 0.4s;
+    }
+
+    .current--card{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .previous--card{
+        transform: translateX(calc(-100% - 24px));
+    }
+
+    .next--card{
+        transform: translateX(calc(100% + 24px));
+    }
+}

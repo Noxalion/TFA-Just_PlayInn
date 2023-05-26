@@ -93,6 +93,7 @@ body{
         
         &Close{
             position: sticky;
+            z-index: 10;
             top: 0px;
             margin-left: calc(100% - 72px);
             font-size: 0;

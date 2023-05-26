@@ -1,14 +1,8 @@
-# Gulp starter
-
-All packages are configured in the package.json.
+# Simple Workflow with Laravel Mix.
 
 ## Install
 
 - `npm i`
-
-## Config
-
-If build on school machine fail, set `useImageOptim` to `false` in `gulpfile.js`
 
 ## Features
 
@@ -21,6 +15,11 @@ If build on school machine fail, set `useImageOptim` to `false` in `gulpfile.js`
 
 ## Commands
 
-- `gulp watch` : build on files changes, launch a dev server with browsersync.
-- `npm run build` : build for production
+- `npx mix watch` : build on files changes, launch a dev server with browsersync.
+- `npm run build` : clean, lint and build the project.
 - `npm run clean` : clean the `dist` folder.
+
+## Warning
+
+Not intended to be used in production since minification as been disabled.  
+For school project purpose only.

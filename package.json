@@ -1,32 +1,31 @@
 {
   "name": "@dwmaj/workflow",
-  "version": "1.2.0",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run clean && gulp --production",
+    "build": "npm run clean && npx mix --production",
+    "start": "npx mix watch",
+    "watch": "npx mix watch",
     "clean": "rimraf dist",
-    "start": "gulp watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwmaj/workflow.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwmaj/workflow/issues"
+  },
+  "homepage": "https://github.com/dwmaj/workflow#readme",
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "browser-sync": "^2.26.14",
-    "eslint": "^7.21.0",
-    "gulp": "^4.0.2",
-    "gulp-eslint": "^6.0.0",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-template": "^5.0.0",
-    "postcss": "^8.4.6",
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.41",
     "rimraf": "^3.0.2",
-    "sass": "^1.49.7",
-    "webpack": "^5.68.0",
-    "webpack-stream": "^7.0.0",
-    "yargs": "^17.3.1"
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0"
   }
 }

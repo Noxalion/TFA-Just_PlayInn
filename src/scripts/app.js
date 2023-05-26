@@ -1,7 +1,5 @@
 "use strict";
 
-const { check } = require("yargs");
-
 let body = document.querySelector(".body");
 
 //burgermenu

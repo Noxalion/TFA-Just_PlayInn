@@ -92,17 +92,28 @@ body{
         }
         
         &Close{
+            position: sticky;
+            top: 0px;
+            margin-left: calc(100% - 72px);
             font-size: 0;
-            width: 58px;
-            height: 58px;
+            width: 90px;
+            height: 90px;
             border: none;
-            background-color: $color-title-darker;
+            background-image: url(../assets/images/sections/close-details.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            filter: drop-shadow(-3px 4px 0px $color-text-highlight);
 
             &:hover, &:focus, &:active{
-                background-color: $color-title;
+                background-image: url(../assets/images/sections/close-details-hover.svg);
             }
         }
-    } 
+    }
+}
+
+.blockScroll{
+    overflow: hidden;
 }
 
 

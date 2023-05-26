@@ -1,8 +1,13 @@
 /* styles et modificateurs des images */
 
-.imgDeco--tell{
+.imgDeco{
     margin-left: 96px;
     margin-right: 96px;
+}
+
+.imgDetails{
+    max-width: 160px;
+    max-height: 160px;
 }
 
 .chargeContainer{
@@ -20,7 +25,6 @@
         border-radius: 72px 0 0 72px;
     }
 }
-
 .imgCharge{
     width: calc(100% + 32px);
     transform: scale(-1,1) translateX(-24px);

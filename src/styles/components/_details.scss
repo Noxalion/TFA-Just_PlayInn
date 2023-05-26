@@ -2,6 +2,7 @@
 
 .details{
     position: fixed;
+    z-index: 30;
     overflow: scroll;
     left: 0;
     right: 0;
@@ -20,4 +21,42 @@
         transform: translateX(0);
         transition: 0.8s cubic-bezier( 0.11, 0.99, 0.49, 1 );
     }
+}
+
+.listProb{
+    list-style: none;
+
+    &__number{
+        font-size: 24px;
+        font-family: $text-specific;
+        font-weight: 800;
+        color: $color-title;
+    }
+
+    &__title{
+        font-size: 0;
+        width: 185px;
+        height: 65px;
+        background-repeat: no-repeat;
+
+        &--{
+            &3{
+                background-image: url(../assets/images/details/x3.svg);
+            }
+
+            &2{
+                background-image: url(../assets/images/details/x2.svg);
+            }
+
+            &1{
+                background-image: url(../assets/images/details/v1.svg);
+            }
+        }
+    }
+}
+
+.borderUnder{
+    border-top: $color-title 5px solid;
+    border-radius: 3px;
+    padding-top: 36px;
 }

@@ -53,57 +53,97 @@ function stopScrollMobile(){
     }
 }
 
-//slider
-const buttons = {
-	prev: document.querySelector(".btn--left"),
-	next: document.querySelector(".btn--right"),
+//slider Probs
+const buttonsProbs = {
+	prev: document.querySelector(".btnProbs--left"),
+	next: document.querySelector(".btnProbs--right"),
 };
-const cardsContainerEl = document.querySelector(".cards");
+const probsContainerEl = document.querySelector(".probs");
 
-buttons.next.addEventListener("click", () => swapCards("right"));
+if(buttonsProbs && probsContainerEl){
+    buttonsProbs.next.addEventListener("click", () => swapProbs("right"));
 
-buttons.prev.addEventListener("click", () => swapCards("left"));
+    buttonsProbs.prev.addEventListener("click", () => swapProbs("left"));
+}
 
-function swapCards(direction) {
-	const currentCardEl = cardsContainerEl.querySelector(".current--card");
-	const previousCardEl = cardsContainerEl.querySelector(".previous--card");
-	const nextCardEl = cardsContainerEl.querySelector(".next--card");
+function swapProbs(direction) {
+	const currentProbEl = probsContainerEl.querySelector(".current--prob");
+	const previousProbEl = probsContainerEl.querySelector(".previous--prob");
+	const nextProbEl = probsContainerEl.querySelector(".next--prob");
 
-	swapCardsClass();
-    checkCardsSize();
+	swapProbsClass();
+    checkProbsSize();
 
-	function swapCardsClass() {
-		currentCardEl.classList.remove("current--card");
-		previousCardEl.classList.remove("previous--card");
-		nextCardEl.classList.remove("next--card");
+	function swapProbsClass() {
+		currentProbEl.classList.remove("current--prob");
+		previousProbEl.classList.remove("previous--prob");
+		nextProbEl.classList.remove("next--prob");
 
 		if (direction === "right") {
-			currentCardEl.classList.add("previous--card");
-			previousCardEl.classList.add("next--card");
-			nextCardEl.classList.add("current--card");
+			currentProbEl.classList.add("previous--prob");
+			previousProbEl.classList.add("next--prob");
+			nextProbEl.classList.add("current--prob");
 
 		} else if (direction === "left") {
-			currentCardEl.classList.add("next--card");
-			previousCardEl.classList.add("current--card");
-			nextCardEl.classList.add("previous--card");
+			currentProbEl.classList.add("next--prob");
+			previousProbEl.classList.add("current--prob");
+			nextProbEl.classList.add("previous--prob");
 		}
 	}
 
-    function checkCardsSize() {    
+    function checkProbsSize() {    
         if (direction === "right") {
-            if (nextCardEl.classList.contains("cards__card--smaller")) {
-                cardsContainerEl.classList.add("cards--smaller");
+            if (nextProbEl.classList.contains("probs__prob--smaller")) {
+                probsContainerEl.classList.add("probs--smaller");
             }else{
-                cardsContainerEl.classList.remove("cards--smaller");
+                probsContainerEl.classList.remove("probs--smaller");
             }
     
         } else if (direction === "left") {
-            if (previousCardEl.classList.contains("cards__card--smaller")) {
-                cardsContainerEl.classList.add("cards--smaller");
+            if (previousProbEl.classList.contains("probs__prob--smaller")) {
+                probsContainerEl.classList.add("probs--smaller");
             }else{
-                cardsContainerEl.classList.remove("cards--smaller");
+                probsContainerEl.classList.remove("probs--smaller");
             }
         }
     }
+}
+
+//slider Probs
+const buttonsEx = {
+	prev: document.querySelector(".btnEx--left"),
+	next: document.querySelector(".btnEx--right"),
+};
+const exContainerEl = document.querySelector(".examples");
+
+if(buttonsEx && exContainerEl){
+    buttonsEx.next.addEventListener("click", () => swapEx("right"));
+
+    buttonsEx.prev.addEventListener("click", () => swapEx("left"));
+}
+
+function swapEx(direction) {
+	const currentExEl = exContainerEl.querySelector(".current--ex");
+	const previousExEl = exContainerEl.querySelector(".previous--ex");
+	const nextExEl = exContainerEl.querySelector(".next--ex");
+
+	swapExClass();
+
+	function swapExClass() {
+		currentExEl.classList.remove("current--ex");
+		previousExEl.classList.remove("previous--ex");
+		nextExEl.classList.remove("next--ex");
+
+		if (direction === "right") {
+			currentExEl.classList.add("previous--ex");
+			previousExEl.classList.add("next--ex");
+			nextExEl.classList.add("current--ex");
+
+		} else if (direction === "left") {
+			currentExEl.classList.add("next--ex");
+			previousExEl.classList.add("current--ex");
+			nextExEl.classList.add("previous--ex");
+		}
+	}
 }
 

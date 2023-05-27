@@ -129,6 +129,31 @@
   margin-left: 15px;
 }
 
+.bg-purple {
+  position: relative;
+}
+.bg-purple__fond {
+  position: absolute;
+  background-color: #DFB0FF;
+  opacity: 30%;
+  padding-left: 24px;
+  padding-right: 24px;
+  top: -18px;
+  left: -24px;
+  width: 100%;
+  z-index: -1;
+}
+.bg-purple__fond--probs {
+  height: 93%;
+}
+.bg-purple__fond--recherches {
+  height: 94%;
+}
+.bg-purple__fond--solutions {
+  height: 80%;
+  top: 10%;
+}
+
 /* styles des zones de détails */
 .details {
   position: fixed;
@@ -303,6 +328,26 @@
   width: calc(100% + 24px);
   transform: translateX(-12px);
   padding-bottom: 12.5%;
+}
+
+.carteContainer {
+  position: relative;
+}
+.carteContainer__fond {
+  position: absolute;
+  z-index: -1;
+  opacity: 30%;
+  background-color: #DFB0FF;
+  width: 100%;
+  height: 60%;
+  bottom: 0;
+  border-radius: 500px;
+}
+
+.imgCartes {
+  width: 75%;
+  padding-left: 24px;
+  padding-bottom: 48px;
 }
 
 .footer {

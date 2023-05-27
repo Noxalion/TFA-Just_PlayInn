@@ -28,3 +28,33 @@
     list-style-type: "- ";
     margin-left: 15px;
 }
+
+.bg-purple{
+    position: relative;
+    
+
+    &__fond{
+        position: absolute;
+        background-color: $color-bg-purple;
+        opacity: 30%;
+        padding-left: 24px;
+        padding-right: 24px;
+        top: -18px;
+        left: -24px;
+        width: 100%;
+        z-index: -1;
+        
+        &--probs{
+            height: 93%;
+        }
+
+        &--recherches{
+            height: 94%;
+        }
+
+        &--solutions{
+            height: 80%;
+            top: 10%;
+        }
+    }
+}

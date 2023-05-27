@@ -17,6 +17,7 @@
 
     &__fond{
         position: absolute;
+        z-index: -1;
         background-color: $color-bg-purple;
         width: 100%;
         height: 62%;
@@ -28,4 +29,26 @@
 .imgCharge{
     width: calc(100% + 32px);
     transform: scale(-1,1) translateX(-24px);
+}
+
+.feteContainer{
+    position: relative;
+    width: calc(100% + 48px);
+    overflow: hidden;
+    left: -24px;
+
+    &__fond{
+        position: absolute;
+        z-index: -1;
+        opacity: 30%;
+        background-color: $color-bg-purple;
+        width: 100%;
+        height: 40%;
+        top: 60%;
+    }
+}
+.imgFete{
+    width: calc(100% + 24px);
+    transform: translateX(-12px);
+    padding-bottom: 12.5%;
 }

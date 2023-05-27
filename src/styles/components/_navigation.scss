@@ -37,8 +37,8 @@
 
     &__content{
         position: relative;
-        width: calc(100% + 48px);
-        height: calc(100% + 58px);
+        width: 100%;
+        height: calc(100% - 22px);
         left: -24px;
         top: -18px;
         padding: 40px 24px 18px;
@@ -72,6 +72,47 @@
             &--open{
                 display: none;
                 pointer-events: none;
+            }
+        }
+    }
+}
+
+.nav{
+    list-style: none;
+
+    &__el{
+        font-size: 22px;
+        font-family: $text-specific;
+        font-weight: 800;
+
+        .anchorDetails{
+            display: none;
+        }
+
+        .anchor{
+            position: relative;
+            color: $color-title;
+            left: 85px;
+
+            &::before{
+                content: "";
+                position: absolute;
+                background-image: url(../assets/images/sections/hexagone-nav.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                left: -85px;
+                top: -24px;
+                width: 64px;
+                height: 75px;
+                transform: rotateZ(90deg);
+                opacity: 70%;
+                filter: drop-shadow(3px 3px 0px $color-text-highlight);
+            }
+
+            &:hover, &:focus, &:active{
+                &::before{
+                    opacity: 1;
+                }
             }
         }
     }

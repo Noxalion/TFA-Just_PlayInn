@@ -30,6 +30,9 @@
   width: 58px;
   height: 58px;
 }
+.menu__btn__svg .block:hover, .menu__btn__svg .block:active, .menu__btn__svg .block:focus {
+  fill: #7B429F;
+}
 .menu__btn--close {
   display: none;
   pointer-events: none;
@@ -67,19 +70,25 @@
 
 .nav {
   list-style: none;
+  margin-top: 24px;
 }
 .nav__el {
   font-size: 22px;
   font-family: "congenial";
   font-weight: 800;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 .nav__el .anchorDetails {
   display: none;
+  pointer-events: none;
 }
 .nav__el .anchor {
   position: relative;
   color: #934EBF;
-  left: 85px;
+  left: 80px;
 }
 .nav__el .anchor::before {
   content: "";
@@ -87,16 +96,82 @@
   background-image: url(../assets/images/sections/hexagone-nav.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  left: -85px;
-  top: -24px;
-  width: 64px;
-  height: 75px;
+  left: -75px;
+  top: -22px;
+  width: 59px;
+  height: 70px;
   transform: rotateZ(90deg);
   opacity: 70%;
   filter: drop-shadow(3px 3px 0px #260F26);
 }
 .nav__el .anchor:hover::before, .nav__el .anchor:focus::before, .nav__el .anchor:active::before {
   opacity: 1;
+}
+.nav__el .anchor--onRight {
+  position: relative;
+  right: -48px;
+  left: auto;
+}
+.nav__el .anchor--onRight::before {
+  left: auto;
+  right: -75px;
+}
+.nav__el .anchor--onRight--aBitLess {
+  right: -44px;
+}
+.nav__el--active {
+  font-size: 26px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+}
+.nav__el--active .anchor {
+  color: #4E364E;
+}
+.nav__el--active .anchor::before {
+  opacity: 1;
+  top: -18px;
+  background-image: url(../assets/images/sections/hexagone-nav-active.svg);
+}
+
+.pion {
+  position: absolute;
+  width: 48px;
+  z-index: 20;
+  left: 52px;
+  top: 82px;
+  display: none;
+}
+.pion--pos1 {
+  display: block;
+  transition: 0.4s;
+}
+.pion--pos2 {
+  transition: 0.4s;
+  transform: translateX(208px) translateY(66px);
+}
+.pion--pos3 {
+  transition: 0.4s;
+  transform: translateY(132px);
+}
+.pion--pos4 {
+  transition: 0.4s;
+  transform: translateX(208px) translateY(196px);
+}
+.pion--pos5 {
+  transition: 0.4s;
+  transform: translateY(262px);
+}
+.pion--pos6 {
+  transition: 0.4s;
+  transform: translateX(208px) translateY(326px);
+}
+.pion--pos7 {
+  transition: 0.4s;
+  transform: translateY(392px);
+}
+.pion--pos8 {
+  transition: 0.4s;
+  transform: translateX(208px) translateY(456px);
 }
 
 /* page d'accueil */

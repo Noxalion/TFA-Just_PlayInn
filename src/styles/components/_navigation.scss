@@ -106,8 +106,7 @@
             color: $color-title;
             left: 80px;
 
-            &::before{
-                content: "";
+            .hexagon{
                 position: absolute;
                 background-image: url(../assets/images/sections/hexagone-nav.svg);
                 background-repeat: no-repeat;
@@ -132,7 +131,7 @@
                 right: -48px;
                 left: auto;
     
-                &::before{
+                .hexagon{
                     left: auto;
                     right: -75px;
                 }
@@ -167,11 +166,11 @@
     z-index: 20;
     left: 52px;
     top: 82px;
-    display: none;
+    pointer-events: none;
 
     &--pos{
         &1{
-            display: block;
+            pointer-events: all;
             transition: 0.4s;
         }
 

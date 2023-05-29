@@ -1,5 +1,14 @@
 "use strict";
 
+//import GSAP
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+
 let body = document.querySelector(".body");
 
 //burgermenu
@@ -109,7 +118,7 @@ function swapProbs(direction) {
     }
 }
 
-//slider Probs
+//slider Examples
 const buttonsEx = {
 	prev: document.querySelector(".btnEx--left"),
 	next: document.querySelector(".btnEx--right"),
@@ -147,3 +156,106 @@ function swapEx(direction) {
 	}
 }
 
+
+//anim nav
+const nav = gsap.utils.toArray(".nav__el");
+const listID = ["#introduction", "#rencontres", "#problemes", "#hypotheses", "#solutions", "#recherches", "#presentation", "#conclusion"];
+
+
+pionAnim();
+for (let i = 0; i < nav.length; i++) {
+    navAnim(nav[i], i);
+}
+
+function navAnim(item, index){
+    const selector = gsap.utils.selector(item);
+    const ancre = selector(".anchor");
+    const hexagon = selector(".hexagon");
+
+    gsap.to(ancre, {
+        duration: 0.2,
+        color: "#4e364e",
+        scrollTrigger:{
+            trigger: listID[index],
+            toggleActions: "play reverse play reverse",
+            start: "top 20%",
+            end: "bottom 20%",
+            markers: true
+        }
+    })
+
+    gsap.to(hexagon, {
+        duration: 0.2,
+        opacity: 1,
+        backgroundImage: "url(assets/images/sections/hexagone-nav-active.svg)",
+        scrollTrigger:{
+            trigger: listID[index],
+            toggleActions: "play reverse play reverse",
+            start: "top 20%",
+            end: "bottom 20%",
+            markers: true
+        }
+    })
+}
+
+
+function pionAnim(){
+
+    let pion = document.querySelector(".pion");
+
+    ScrollTrigger.create({
+        trigger: listID[0],
+        start: "top 20%",
+        end: "bottom 20%",
+        toggleClass: {targets: pion, className: "pion--pos1"}
+    })
+
+    ScrollTrigger.create({
+        trigger: listID[1],
+        start: "top 20%",
+        end: "bottom 20%",
+        toggleClass: {targets: pion, className: "pion--pos2"}
+    })
+
+    ScrollTrigger.create({
+        trigger: listID[2],
+        start: "top 20%",
+        end: "bottom 20%",
+        toggleClass: {targets: pion, className: "pion--pos3"}
+    })
+
+    ScrollTrigger.create({
+        trigger: listID[3],
+        start: "top 20%",
+        end: "bottom 20%",
+        toggleClass: {targets: pion, className: "pion--pos4"}
+    })
+
+    ScrollTrigger.create({
+        trigger: listID[4],
+        start: "top 20%",
+        end: "bottom 20%",
+        toggleClass: {targets: pion, className: "pion--pos5"}
+    })
+    
+    ScrollTrigger.create({
+        trigger: listID[5],
+        start: "top 20%",
+        end: "bottom 20%",
+        toggleClass: {targets: pion, className: "pion--pos6"}
+    })
+
+    ScrollTrigger.create({
+        trigger: listID[6],
+        start: "top 20%",
+        end: "bottom 20%",
+        toggleClass: {targets: pion, className: "pion--pos7"}
+    })
+
+    ScrollTrigger.create({
+        trigger: listID[7],
+        start: "top 20%",
+        end: "bottom 20%",
+        toggleClass: {targets: pion, className: "pion--pos8"}
+    })
+}

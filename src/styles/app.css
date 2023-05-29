@@ -53,6 +53,7 @@
 }
 .menu__content .title {
   color: #4e364e;
+  margin-left: 32px;
 }
 .menu.open .menu__content {
   pointer-events: all;

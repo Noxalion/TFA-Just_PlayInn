@@ -157,7 +157,7 @@ function swapEx(direction) {
 }
 
 
-//anim nav
+//animation du menu, de la nav et du pion
 const nav = gsap.utils.toArray(".nav__el");
 const listID = ["#introduction", "#rencontres", "#problemes", "#hypotheses", "#solutions", "#recherches", "#presentation", "#conclusion"];
 
@@ -166,6 +166,9 @@ pionAnim();
 for (let i = 0; i < nav.length; i++) {
     navAnim(nav[i], i);
 }
+appartionMenu();
+
+
 
 function navAnim(item, index){
     const selector = gsap.utils.selector(item);
@@ -179,8 +182,7 @@ function navAnim(item, index){
             trigger: listID[index],
             toggleActions: "play reverse play reverse",
             start: "top 20%",
-            end: "bottom 20%",
-            markers: true
+            end: "bottom 20%"
         }
     })
 
@@ -192,8 +194,7 @@ function navAnim(item, index){
             trigger: listID[index],
             toggleActions: "play reverse play reverse",
             start: "top 20%",
-            end: "bottom 20%",
-            markers: true
+            end: "bottom 20%"
         }
     })
 }
@@ -257,5 +258,19 @@ function pionAnim(){
         start: "top 20%",
         end: "bottom 20%",
         toggleClass: {targets: pion, className: "pion--pos8"}
+    })
+}
+
+function appartionMenu() {
+    gsap.from(burgerMenu, {
+        duration: 0.3,
+        opacity: 0,
+        pointerEvents: "none",
+        scrollTrigger:{
+            trigger: listID[0],
+            toggleActions: "play none none reverse",
+            start: "top 20%",
+            end: "bottom 20%"
+        }
     })
 }

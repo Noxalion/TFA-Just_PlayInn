@@ -89,6 +89,7 @@
   position: relative;
   color: #934EBF;
   left: 80px;
+  transition: 0.3s;
 }
 .nav__el .anchor .hexagon {
   position: absolute;
@@ -102,9 +103,16 @@
   transform: rotateZ(90deg);
   opacity: 0.7;
   filter: drop-shadow(3px 3px 0px #260F26);
+  transition: 0.3s;
 }
-.nav__el .anchor:hover, .nav__el .anchor:focus, .nav__el .anchor:active {
-  color: red;
+.nav__el .anchor--active {
+  transition: 0.3s;
+  color: #4e364e;
+}
+.nav__el .anchor--active .hexagon {
+  transition: 0.3s;
+  opacity: 1;
+  background-image: url(../assets/images/sections/hexagone-nav-active.svg);
 }
 .nav__el .anchor:hover .hexagon, .nav__el .anchor:focus .hexagon, .nav__el .anchor:active .hexagon {
   opacity: 1;

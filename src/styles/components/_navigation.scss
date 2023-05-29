@@ -105,6 +105,7 @@
             position: relative;
             color: $color-title;
             left: 80px;
+            transition: 0.3s;
 
             .hexagon{
                 position: absolute;
@@ -118,11 +119,21 @@
                 transform: rotateZ(90deg);
                 opacity: 0.7;
                 filter: drop-shadow(3px 3px 0px $color-text-highlight);
+                transition: 0.3s;
+            }
+            
+            &--active{
+                transition: 0.3s;
+                color: $color-text;
+
+                .hexagon{
+                    transition: 0.3s;
+                    opacity: 1;
+                    background-image: url(../assets/images/sections/hexagone-nav-active.svg);
+                }
             }
 
-            &:hover, &:focus, &:active{
-                color: red;
-                
+            &:hover, &:focus, &:active{            
                 .hexagon{
                     opacity: 1;
                 }

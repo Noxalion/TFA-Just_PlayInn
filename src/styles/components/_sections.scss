@@ -58,3 +58,56 @@
         }
     }
 }
+
+
+@media (min-width: 700px) {
+    .spaceBelow{
+        margin-bottom: 20px;
+    }
+    
+    .middleSpaceBelow{
+        margin-bottom: 40px;
+    }
+    
+    .spaceForAnchor{
+        padding-top: 160px;
+    }
+    
+    .bigSpaceUnder{
+        margin-top: 160px;
+    }
+    
+    .bigSpaceBelow{
+        margin-bottom: 160px;
+    }
+    
+    .middleSpaceBelow--bigger{
+        margin-bottom: 80px;
+    }
+    
+    .list{
+        margin-left: 16px;
+    }
+    
+    .bg-purple{
+        &__fond{
+            padding-left: 80px;
+            padding-right: 80px;
+            top: -40px;
+            left: -80px;
+            
+            &--probs{
+                height: 93%;
+            }
+    
+            &--recherches{
+                height: 94%;
+            }
+    
+            &--solutions{
+                height: 80%;
+                top: 8%;
+            }
+        }
+    }
+}

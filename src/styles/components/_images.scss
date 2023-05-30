@@ -72,3 +72,46 @@
     padding-left: 24px;
     padding-bottom: 48px;
 }
+
+
+
+
+
+@media (min-width: 700px) {
+    .imgDeco{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .chargeContainer{
+        width: calc(100% + 80px);
+    
+        &__fond{
+            border-radius: 60px 0 0 60px;
+        }
+    }
+    .imgCharge{
+        width: 85%;
+    }
+    
+    .feteContainer{
+        width: calc(100% + 160px);
+        left: -80px;
+    }
+    .imgFete{
+        width: 95%;
+        transform: translateX(20px);
+        padding-bottom: 10%;
+    }
+    
+    .carteContainer{
+        &__fond{
+            height: 60%;
+        }
+    }
+    .imgCartes{
+        width: 65%;
+        padding-left: 80px;
+        padding-bottom: 80px;
+    }
+}

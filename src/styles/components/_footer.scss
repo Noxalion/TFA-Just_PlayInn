@@ -31,3 +31,18 @@
         }
     }
 }
+
+@media (min-width: 700px) {
+    .footer{
+        border-radius: 48px 48px 0 0;
+        left: -80px;
+        right: -80px;
+        padding: 60px 80px;
+        font-size: 20px;
+    
+        &__credits{
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}

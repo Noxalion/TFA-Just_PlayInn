@@ -181,7 +181,7 @@
     height: calc(100% - 160px);
     top: 0;
     left: 0;
-    padding: 100px 80px 80px;
+    padding: 80px 80px;
   }
   .menu__btn {
     right: 80px;
@@ -193,10 +193,9 @@
     height: 80px;
   }
   .menu__content {
-    width: 100%;
     height: calc(100% - 20px);
     left: -80px;
-    top: -100px;
+    top: -80px;
     padding: 100px 80px 80px;
     transform: translateX(calc(100% + 80px));
   }
@@ -326,7 +325,7 @@
   margin-bottom: 36px;
 }
 .middleSpaceBelow--bigger {
-  margin-bottom: 48px;
+  margin-bottom: 54px;
 }
 
 .spaceForAnchor {
@@ -521,15 +520,19 @@
 
 .btnContainer {
   margin-top: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 54px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 72px;
        column-gap: 72px;
 }
+.btnContainer--onEnd {
+  margin-bottom: 72px;
+}
 
 @media (min-width: 700px) {
   .details {
+    padding-top: 60px;
     padding-left: 80px;
     padding-right: 80px;
     transform: translateX(calc(100% + 160px));
@@ -563,6 +566,9 @@
     margin-bottom: 80px;
     -moz-column-gap: 80px;
          column-gap: 80px;
+  }
+  .btnContainer--onEnd {
+    margin-bottom: 180px;
   }
 }
 /* grille */ /* styles et modificateurs des images */
@@ -653,7 +659,6 @@
     margin-right: 220px;
   }
   .imgDetails {
-    margin-left: 220px;
     max-width: 240px;
     max-height: 240px;
   }
@@ -688,8 +693,8 @@
     padding-left: 120px;
   }
   .imgFlush {
-    width: 75%;
-    padding-left: 80px;
+    width: 80%;
+    padding-left: 60px;
   }
   .imgLoose {
     width: 70%;
@@ -877,7 +882,6 @@ body {
     font-size: 24px;
   }
   .btn--detailsClose {
-    top: 80px;
     margin-left: calc(100% - 100px);
     width: 120px;
     height: 120px;

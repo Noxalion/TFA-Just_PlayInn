@@ -132,10 +132,14 @@
 
 .btnContainer{
     margin-top: 24px;
-    margin-bottom: 72px;
+    margin-bottom: 54px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 72px;
+
+    &--onEnd{
+        margin-bottom: 72px;
+    }
 }
 
 
@@ -144,6 +148,7 @@
 
 @media (min-width: 700px) {
     .details{
+        padding-top: 60px;
         padding-left: 80px;
         padding-right: 80px;
     
@@ -193,5 +198,9 @@
         margin-top: 30px;
         margin-bottom: 80px;
         column-gap: 80px;
+
+        &--onEnd{
+            margin-bottom: 180px;
+        }
     }
 }

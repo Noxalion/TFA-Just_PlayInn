@@ -55,6 +55,10 @@
         z-index: 5;
         transform: translateX(calc(100% + 48px));
         transition: 0.8s cubic-bezier( 0.11, 0.99, 0.49, 1 );
+        
+        &--anchorClicked{
+            transition-delay: 0.5s;
+        }
 
         .title{
             color: $color-text;
@@ -169,41 +173,41 @@
     &--pos{
         &1{
             pointer-events: all;
-            transition: 0.4s;
+            transition: 0.5s cubic-bezier( 0.44, 0.95, .58, 1 );
         }
 
         &2{
-            transition: 0.4s;
+            transition: 0.5s cubic-bezier( 0.44, 0.95, .58, 1 );
             transform: translateX(208px) translateY(66px);
         }
 
         &3{
-            transition: 0.4s;
+            transition: 0.5s cubic-bezier( 0.44, 0.95, .58, 1 );
             transform: translateY(132px);
         }
 
         &4{
-            transition: 0.4s;
+            transition: 0.5s cubic-bezier( 0.44, 0.95, .58, 1 );
             transform: translateX(208px) translateY(196px);
         }
 
         &5{
-            transition: 0.4s;
+            transition: 0.5s cubic-bezier( 0.44, 0.95, .58, 1 );
             transform: translateY(262px);
         }
 
         &6{
-            transition: 0.4s;
+            transition: 0.5s cubic-bezier( 0.44, 0.95, .58, 1 );
             transform: translateX(208px) translateY(326px);
         }
 
         &7{
-            transition: 0.4s;
+            transition: 0.5s cubic-bezier( 0.44, 0.95, .58, 1 );
             transform: translateY(392px);
         }
 
         &8{
-            transition: 0.4s;
+            transition: 0.5s cubic-bezier( 0.44, 0.95, .58, 1 );
             transform: translateX(208px) translateY(456px);
         }
     }
@@ -228,72 +232,30 @@
             height: 80px;
     
             &__svg{
-                filter: drop-shadow(-3px 4px 0px $color-text-highlight);
-                width: 58px;
-                height: 58px;
-    
-                .block{
-                    &:hover, &:active, &:focus{
-                        fill: $color-title-darker;
-                    }
-                }
-            }
-    
-            &--close{
-                display: none;
-                pointer-events: none;
+                width: 80px;
+                height: 80px;
             }
         }
     
         &__content{
-            position: relative;
             width: 100%;
-            height: calc(100% - 22px);
-            left: -24px;
-            top: -18px;
-            padding: 40px 24px 18px;
-            background: rgb(255,252,249);
-            background: linear-gradient(88deg, rgba(255,252,249,1) 10%, rgba(245,229,251,1) 40%, rgba(245,229,251,1) 100%);
-    
-            pointer-events: none;
-            z-index: 5;
-            transform: translateX(calc(100% + 48px));
-            transition: 0.8s cubic-bezier( 0.11, 0.99, 0.49, 1 );
+            height: calc(100% - 20px);
+            left: -80px;
+            top: -80px;
+            padding: 100px 80px 80px;
+            transform: translateX(calc(100% + 80px));
     
             .title{
-                color: $color-text;
                 margin-left: 32px;
-            }
-        }
-    
-        &.open{
-    
-            .menu__content{
-                pointer-events: all;
-                transform: translateX(0);
-                transition: 0.8s cubic-bezier( 0.11, 0.99, 0.49, 1 );
-            }
-            
-            .menu__btn{
-                &--close{
-                    display: block;
-                    pointer-events: all;
-                }
-    
-                &--open{
-                    display: none;
-                    pointer-events: none;
-                }
             }
         }
     }
     
     .nav{
-        list-style: none;
-        margin-top: 24px;
+        margin-top: 40px;
     
         &__el{
-            font-size: 22px;
+            font-size: 40px;
             font-family: $text-specific;
             font-weight: 800;
             padding-top: 18px;
@@ -301,47 +263,14 @@
             margin-left: 32px;
             margin-right: 32px;
     
-            .anchorDetails{
-                display: none;
-                pointer-events: none;
-            }
-    
             .anchor{
-                position: relative;
-                color: $color-title;
                 left: 80px;
-                transition: 0.3s;
     
                 .hexagon{
-                    position: absolute;
-                    background-image: url(../assets/images/sections/hexagone-nav.svg);
-                    background-repeat: no-repeat;
-                    background-size: contain;
                     left: -75px;
                     top: -22px;
-                    width: 59px;
-                    height: 70px;
-                    transform: rotateZ(90deg);
-                    opacity: 0.7;
-                    filter: drop-shadow(3px 3px 0px $color-text-highlight);
-                    transition: 0.3s;
-                }
-                
-                &--active{
-                    transition: 0.3s;
-                    color: $color-text;
-    
-                    .hexagon{
-                        transition: 0.3s;
-                        opacity: 1;
-                        background-image: url(../assets/images/sections/hexagone-nav-active.svg);
-                    }
-                }
-    
-                &:hover, &:focus, &:active{            
-                    .hexagon{
-                        opacity: 1;
-                    }
+                    width: 68px;
+                    height: 80px;
                 }
     
                 &--onRight{

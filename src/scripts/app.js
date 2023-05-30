@@ -11,24 +11,33 @@ gsap.registerPlugin(ScrollTrigger);
 
 let body = document.querySelector(".body");
 
-//burgermenu
+//BURGERMENU
 let burgerMenu = document.querySelector(".menu__btn");
 let menu = document.querySelector(".menu");
+let menuContent = document.querySelector(".menu__content");
 if (burgerMenu && menu) {
-    burgerMenu.addEventListener("click", burgerStatus);
+    burgerMenu.addEventListener("click", () => {
+        menuContent.classList.remove("menu__content--anchorClicked");
+        burgerStatus();
+    });
 }
 
-function burgerStatus(){
-    menu.classList.toggle("open");
-    stopScrollMobile();
-}
 
 let anchor = document.querySelectorAll(".anchor");
 if (anchor) {
     for (let i = 0; i < anchor.length; i++) {
-        anchor[i].addEventListener("click", burgerStatus);
+        anchor[i].addEventListener("click", () => {
+            menuContent.classList.add("menu__content--anchorClicked");
+            burgerStatus();
+        });
     }
 }
+
+function burgerStatus(){
+    menu.classList.toggle("open");
+    stopScroll();
+}
+
 
 
 //déploiement des zones de détails
@@ -41,12 +50,12 @@ if (zonesDetails && btnsDetails && btnsFerme) {
         //pour ouvrir
         btnsDetails[i].addEventListener("click", () => {
             zoneDetailOpen(i);
-            stopScrollMobile();
+            stopScroll();
         });
         //pour fermer
         btnsFerme[i].addEventListener("click", () => {
             zoneDetailOpen(i);
-            stopScrollMobile();
+            stopScroll();
         }); 
     }
 }
@@ -56,10 +65,8 @@ function zoneDetailOpen(el){
 }
 
 //bloque le scroll du body quand on est dans un menu secondaire sur tell
-function stopScrollMobile(){
-    if (screen.width < 1000) {
+function stopScroll(){
         body.classList.toggle("blockScroll");
-    }
 }
 
 //slider Probs

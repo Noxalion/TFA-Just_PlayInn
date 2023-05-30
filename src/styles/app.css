@@ -51,6 +51,9 @@
   transform: translateX(calc(100% + 48px));
   transition: 0.8s cubic-bezier(0.11, 0.99, 0.49, 1);
 }
+.menu__content--anchorClicked {
+  transition-delay: 0.5s;
+}
 .menu__content .title {
   color: #4e364e;
   margin-left: 32px;
@@ -141,34 +144,34 @@
 }
 .pion--pos1 {
   pointer-events: all;
-  transition: 0.4s;
+  transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
 }
 .pion--pos2 {
-  transition: 0.4s;
+  transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
   transform: translateX(208px) translateY(66px);
 }
 .pion--pos3 {
-  transition: 0.4s;
+  transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
   transform: translateY(132px);
 }
 .pion--pos4 {
-  transition: 0.4s;
+  transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
   transform: translateX(208px) translateY(196px);
 }
 .pion--pos5 {
-  transition: 0.4s;
+  transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
   transform: translateY(262px);
 }
 .pion--pos6 {
-  transition: 0.4s;
+  transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
   transform: translateX(208px) translateY(326px);
 }
 .pion--pos7 {
-  transition: 0.4s;
+  transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
   transform: translateY(392px);
 }
 .pion--pos8 {
-  transition: 0.4s;
+  transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
   transform: translateX(208px) translateY(456px);
 }
 
@@ -186,54 +189,25 @@
     height: 80px;
   }
   .menu__btn__svg {
-    filter: drop-shadow(-3px 4px 0px #260F26);
-    width: 58px;
-    height: 58px;
-  }
-  .menu__btn__svg .block:hover, .menu__btn__svg .block:active, .menu__btn__svg .block:focus {
-    fill: #7B429F;
-  }
-  .menu__btn--close {
-    display: none;
-    pointer-events: none;
+    width: 80px;
+    height: 80px;
   }
   .menu__content {
-    position: relative;
     width: 100%;
-    height: calc(100% - 22px);
-    left: -24px;
-    top: -18px;
-    padding: 40px 24px 18px;
-    background: rgb(255, 252, 249);
-    background: linear-gradient(88deg, rgb(255, 252, 249) 10%, rgb(245, 229, 251) 40%, rgb(245, 229, 251) 100%);
-    pointer-events: none;
-    z-index: 5;
-    transform: translateX(calc(100% + 48px));
-    transition: 0.8s cubic-bezier(0.11, 0.99, 0.49, 1);
+    height: calc(100% - 20px);
+    left: -80px;
+    top: -80px;
+    padding: 100px 80px 80px;
+    transform: translateX(calc(100% + 80px));
   }
   .menu__content .title {
-    color: #4e364e;
     margin-left: 32px;
   }
-  .menu.open .menu__content {
-    pointer-events: all;
-    transform: translateX(0);
-    transition: 0.8s cubic-bezier(0.11, 0.99, 0.49, 1);
-  }
-  .menu.open .menu__btn--close {
-    display: block;
-    pointer-events: all;
-  }
-  .menu.open .menu__btn--open {
-    display: none;
-    pointer-events: none;
-  }
   .nav {
-    list-style: none;
-    margin-top: 24px;
+    margin-top: 40px;
   }
   .nav__el {
-    font-size: 22px;
+    font-size: 40px;
     font-family: "congenial";
     font-weight: 800;
     padding-top: 18px;
@@ -241,41 +215,14 @@
     margin-left: 32px;
     margin-right: 32px;
   }
-  .nav__el .anchorDetails {
-    display: none;
-    pointer-events: none;
-  }
   .nav__el .anchor {
-    position: relative;
-    color: #934EBF;
     left: 80px;
-    transition: 0.3s;
   }
   .nav__el .anchor .hexagon {
-    position: absolute;
-    background-image: url(../assets/images/sections/hexagone-nav.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
     left: -75px;
     top: -22px;
-    width: 59px;
-    height: 70px;
-    transform: rotateZ(90deg);
-    opacity: 0.7;
-    filter: drop-shadow(3px 3px 0px #260F26);
-    transition: 0.3s;
-  }
-  .nav__el .anchor--active {
-    transition: 0.3s;
-    color: #4e364e;
-  }
-  .nav__el .anchor--active .hexagon {
-    transition: 0.3s;
-    opacity: 1;
-    background-image: url(../assets/images/sections/hexagone-nav-active.svg);
-  }
-  .nav__el .anchor:hover .hexagon, .nav__el .anchor:focus .hexagon, .nav__el .anchor:active .hexagon {
-    opacity: 1;
+    width: 68px;
+    height: 80px;
   }
   .nav__el .anchor--onRight {
     position: relative;
@@ -651,14 +598,13 @@
 }
 .footer__credits {
   font-size: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
   display: block;
 }
 .footer__list {
   list-style: none;
-}
-.footer__list__el {
-  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .footer .footer__link {
   color: #260F26;

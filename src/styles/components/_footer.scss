@@ -12,16 +12,14 @@
 
     &__credits{
         font-size: 16px;
-        margin-bottom: 48px;
+        margin-bottom: 36px;
         display: block;
     }
 
     &__list{
         list-style: none;
-
-        &__el{
-            margin-bottom: 24px;
-        }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .footer__link{

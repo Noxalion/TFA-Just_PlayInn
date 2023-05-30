@@ -142,10 +142,71 @@ body{
 
 
 
+
+
 /** Tablet **/
 
 @media (min-width: 700px) {
-
+    body{
+        font-size: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .title{
+        font-size: 60px;
+        line-height: 62px;
+    }
+    
+    .highlight_Paragraph{
+        font-size: 24px;
+    }
+    
+    .btn{
+        &--details{    
+            &Close{
+                position: sticky;
+                z-index: 10;
+                top: 0px;
+                margin-left: calc(100% - 72px);
+                font-size: 0;
+                width: 90px;
+                height: 90px;
+                border: none;
+                background-image: url(../assets/images/sections/close-details.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: transparent;
+                filter: drop-shadow(-3px 4px 0px $color-text-highlight);
+    
+                &:hover, &:focus, &:active{
+                    background-image: url(../assets/images/sections/close-details-hover.svg);
+                }
+            }
+        }
+    
+        &Slider{
+            &--left, &--right{
+                font-size: 0;
+                background-color: transparent;
+                background-image: url(../assets/images/details/arrow-slider.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 36px;
+                height: 41px;
+                filter: drop-shadow(-3px 3px 0px $color-text-highlight);
+    
+                &:hover, &:focus, &:active{
+                    background-image: url(../assets/images/details/arrow-slider-hover.svg);
+                }
+            }
+            &--left{
+                transform: scaleX(-1);
+                filter: drop-shadow(3px 3px 0px $color-text-highlight);
+                justify-self: end;
+            }
+        }
+    }
 }
 
 
@@ -156,7 +217,4 @@ body{
 
 @media (min-width: 1000px) {
     
-    body{
-        font-size: 20px;
-    }
 }

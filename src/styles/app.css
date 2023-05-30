@@ -325,6 +325,9 @@
 .middleSpaceBelow {
   margin-bottom: 36px;
 }
+.middleSpaceBelow--bigger {
+  margin-bottom: 48px;
+}
 
 .spaceForAnchor {
   padding-top: 72px;
@@ -336,10 +339,6 @@
 
 .bigSpaceBelow {
   margin-bottom: 72px;
-}
-
-.middleSpaceBelow--bigger {
-  margin-bottom: 48px;
 }
 
 .list {
@@ -379,16 +378,19 @@
   .middleSpaceBelow {
     margin-bottom: 40px;
   }
+  .middleSpaceBelow--bigger {
+    margin-bottom: 80px;
+  }
   .spaceForAnchor {
-    padding-top: 160px;
+    padding-top: 180px;
   }
   .bigSpaceUnder {
-    margin-top: 160px;
+    margin-top: 180px;
   }
   .bigSpaceBelow {
-    margin-bottom: 160px;
+    margin-bottom: 180px;
   }
-  .middleSpaceBelow--bigger {
+  .bigSpaceBelow--smaller {
     margin-bottom: 80px;
   }
   .list {
@@ -400,14 +402,7 @@
     top: -40px;
     left: -80px;
   }
-  .bg-purple__fond--probs {
-    height: 93%;
-  }
-  .bg-purple__fond--recherches {
-    height: 94%;
-  }
   .bg-purple__fond--solutions {
-    height: 80%;
     top: 8%;
   }
 }
@@ -533,10 +528,51 @@
        column-gap: 72px;
 }
 
+@media (min-width: 700px) {
+  .details {
+    padding-left: 80px;
+    padding-right: 80px;
+    transform: translateX(calc(100% + 160px));
+  }
+  .listProb__number {
+    font-size: 26px;
+  }
+  .borderUnder {
+    padding-top: 40px;
+  }
+  .probs--smaller {
+    height: 22%;
+  }
+  .probs .previous--prob {
+    transform: translateX(calc(-100% - 80px));
+  }
+  .probs .next--prob {
+    transform: translateX(calc(100% + 80px));
+  }
+  .examples .previous--ex {
+    transform: translateX(calc(-100% - 80px));
+  }
+  .examples .next--ex {
+    transform: translateX(calc(100% + 80px));
+  }
+  .Example__title {
+    font-size: 26px;
+  }
+  .btnContainer {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+}
 /* grille */ /* styles et modificateurs des images */
 .imgDeco {
   margin-left: 96px;
   margin-right: 96px;
+}
+.imgDeco--echec {
+  margin-left: 110px;
+  margin-right: 110px;
 }
 
 .imgDetails {
@@ -612,6 +648,15 @@
     margin-left: 200px;
     margin-right: 200px;
   }
+  .imgDeco--echec {
+    margin-left: 220px;
+    margin-right: 220px;
+  }
+  .imgDetails {
+    margin-left: 220px;
+    max-width: 240px;
+    max-height: 240px;
+  }
   .chargeContainer {
     width: calc(100% + 80px);
   }
@@ -634,9 +679,29 @@
     height: 60%;
   }
   .imgCartes {
-    width: 65%;
-    padding-left: 80px;
+    width: 50%;
+    padding-left: 140px;
     padding-bottom: 80px;
+  }
+  .imgLoup {
+    width: 65%;
+    padding-left: 120px;
+  }
+  .imgFlush {
+    width: 75%;
+    padding-left: 80px;
+  }
+  .imgLoose {
+    width: 70%;
+    padding-left: 100px;
+  }
+  .imgRegarde {
+    width: 70%;
+    padding-left: 80px;
+  }
+  .imgDe {
+    width: 65%;
+    padding-left: 120px;
   }
 }
 .footer {
@@ -812,40 +877,14 @@ body {
     font-size: 24px;
   }
   .btn--detailsClose {
-    position: sticky;
-    z-index: 10;
-    top: 0px;
-    margin-left: calc(100% - 72px);
-    font-size: 0;
-    width: 90px;
-    height: 90px;
-    border: none;
-    background-image: url(../assets/images/sections/close-details.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: transparent;
-    filter: drop-shadow(-3px 4px 0px #260F26);
-  }
-  .btn--detailsClose:hover, .btn--detailsClose:focus, .btn--detailsClose:active {
-    background-image: url(../assets/images/sections/close-details-hover.svg);
+    top: 80px;
+    margin-left: calc(100% - 100px);
+    width: 120px;
+    height: 120px;
   }
   .btnSlider--left, .btnSlider--right {
-    font-size: 0;
-    background-color: transparent;
-    background-image: url(../assets/images/details/arrow-slider.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 36px;
-    height: 41px;
-    filter: drop-shadow(-3px 3px 0px #260F26);
-  }
-  .btnSlider--left:hover, .btnSlider--left:focus, .btnSlider--left:active, .btnSlider--right:hover, .btnSlider--right:focus, .btnSlider--right:active {
-    background-image: url(../assets/images/details/arrow-slider-hover.svg);
-  }
-  .btnSlider--left {
-    transform: scaleX(-1);
-    filter: drop-shadow(3px 3px 0px #260F26);
-    justify-self: end;
+    width: 52px;
+    height: 60px;
   }
 }
 /** Desktop **//*# sourceMappingURL=app.css.map */

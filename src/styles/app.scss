@@ -165,45 +165,17 @@ body{
     .btn{
         &--details{    
             &Close{
-                position: sticky;
-                z-index: 10;
-                top: 0px;
-                margin-left: calc(100% - 72px);
-                font-size: 0;
-                width: 90px;
-                height: 90px;
-                border: none;
-                background-image: url(../assets/images/sections/close-details.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-color: transparent;
-                filter: drop-shadow(-3px 4px 0px $color-text-highlight);
-    
-                &:hover, &:focus, &:active{
-                    background-image: url(../assets/images/sections/close-details-hover.svg);
-                }
+                top: 80px;
+                margin-left: calc(100% - 100px);
+                width: 120px;
+                height: 120px;
             }
         }
     
         &Slider{
             &--left, &--right{
-                font-size: 0;
-                background-color: transparent;
-                background-image: url(../assets/images/details/arrow-slider.svg);
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 36px;
-                height: 41px;
-                filter: drop-shadow(-3px 3px 0px $color-text-highlight);
-    
-                &:hover, &:focus, &:active{
-                    background-image: url(../assets/images/details/arrow-slider-hover.svg);
-                }
-            }
-            &--left{
-                transform: scaleX(-1);
-                filter: drop-shadow(3px 3px 0px $color-text-highlight);
-                justify-self: end;
+                width: 52px;
+                height: 60px;
             }
         }
     }

@@ -3,6 +3,11 @@
 .imgDeco{
     margin-left: 96px;
     margin-right: 96px;
+
+    &--echec{
+        margin-left: 110px;
+        margin-right: 110px;
+    }
 }
 
 .imgDetails{
@@ -81,6 +86,17 @@
     .imgDeco{
         margin-left: 200px;
         margin-right: 200px;
+
+        &--echec{
+            margin-left: 220px;
+            margin-right: 220px;
+        }
+    }
+
+    .imgDetails{
+        margin-left: 220px;
+        max-width: 240px;
+        max-height: 240px;
     }
 
     .chargeContainer{
@@ -110,8 +126,33 @@
         }
     }
     .imgCartes{
-        width: 65%;
-        padding-left: 80px;
+        width: 50%;
+        padding-left: 140px;
         padding-bottom: 80px;
+    }
+
+    .imgLoup{
+        width: 65%;
+        padding-left: 120px;
+    }
+
+    .imgFlush{
+        width: 75%;
+        padding-left: 80px;
+    }
+
+    .imgLoose{
+        width: 70%;
+        padding-left: 100px;
+    }
+
+    .imgRegarde{
+        width: 70%;
+        padding-left: 80px;
+    }
+
+    .imgDe{
+        width: 65%;
+        padding-left: 120px;
     }
 }

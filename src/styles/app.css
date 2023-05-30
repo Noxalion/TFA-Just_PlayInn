@@ -181,7 +181,7 @@
     height: calc(100% - 160px);
     top: 0;
     left: 0;
-    padding: 80px 80px;
+    padding: 100px 80px 80px;
   }
   .menu__btn {
     right: 80px;
@@ -196,85 +196,69 @@
     width: 100%;
     height: calc(100% - 20px);
     left: -80px;
-    top: -80px;
+    top: -100px;
     padding: 100px 80px 80px;
     transform: translateX(calc(100% + 80px));
   }
   .menu__content .title {
-    margin-left: 32px;
+    margin-left: 50px;
   }
   .nav {
     margin-top: 40px;
   }
   .nav__el {
     font-size: 40px;
-    font-family: "congenial";
-    font-weight: 800;
     padding-top: 18px;
     padding-bottom: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 10px;
   }
   .nav__el .anchor {
     left: 80px;
   }
   .nav__el .anchor .hexagon {
-    left: -75px;
-    top: -22px;
-    width: 68px;
-    height: 80px;
+    left: -100px;
+    top: -24px;
+    width: 85px;
+    height: 100px;
   }
   .nav__el .anchor--onRight {
-    position: relative;
-    right: -48px;
+    right: -150px;
     left: auto;
   }
   .nav__el .anchor--onRight .hexagon {
     left: auto;
-    right: -75px;
+    right: -100px;
   }
   .nav__el .anchor--onRight--aBitLess {
-    right: -44px;
+    right: -144px;
   }
   .pion {
-    position: absolute;
-    width: 48px;
-    z-index: 20;
-    left: 52px;
-    top: 82px;
-    pointer-events: none;
-  }
-  .pion--pos1 {
-    pointer-events: all;
-    transition: 0.4s;
+    width: 70px;
+    left: 132px;
+    top: 168px;
   }
   .pion--pos2 {
-    transition: 0.4s;
-    transform: translateX(208px) translateY(66px);
+    transform: translateX(434px) translateY(100px);
   }
   .pion--pos3 {
-    transition: 0.4s;
-    transform: translateY(132px);
+    transform: translateY(200px);
   }
   .pion--pos4 {
-    transition: 0.4s;
-    transform: translateX(208px) translateY(196px);
+    transform: translateX(434px) translateY(300px);
   }
   .pion--pos5 {
-    transition: 0.4s;
-    transform: translateY(262px);
+    transform: translateY(400px);
   }
   .pion--pos6 {
-    transition: 0.4s;
-    transform: translateX(208px) translateY(326px);
+    transform: translateX(434px) translateY(500px);
   }
   .pion--pos7 {
-    transition: 0.4s;
-    transform: translateY(392px);
+    transform: translateY(600px);
   }
   .pion--pos8 {
-    transition: 0.4s;
-    transform: translateX(208px) translateY(456px);
+    transform: translateX(434px) translateY(700px);
   }
 }
 /* page d'accueil */

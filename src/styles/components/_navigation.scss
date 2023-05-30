@@ -224,7 +224,7 @@
         height: calc(100% - 160px);
         top: 0;
         left: 0;
-        padding: 80px 80px;
+        padding: 100px 80px 80px;
     
         &__btn{
             right: 80px;
@@ -241,12 +241,12 @@
             width: 100%;
             height: calc(100% - 20px);
             left: -80px;
-            top: -80px;
+            top: -100px;
             padding: 100px 80px 80px;
             transform: translateX(calc(100% + 80px));
     
             .title{
-                margin-left: 32px;
+                margin-left: 50px;
             }
         }
     }
@@ -256,35 +256,33 @@
     
         &__el{
             font-size: 40px;
-            font-family: $text-specific;
-            font-weight: 800;
             padding-top: 18px;
             padding-bottom: 16px;
-            margin-left: 32px;
-            margin-right: 32px;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-bottom: 10px;
     
             .anchor{
                 left: 80px;
     
                 .hexagon{
-                    left: -75px;
-                    top: -22px;
-                    width: 68px;
-                    height: 80px;
+                    left: -100px;
+                    top: -24px;
+                    width: 85px;
+                    height: 100px;
                 }
     
                 &--onRight{
-                    position: relative;
-                    right: -48px;
+                    right: -150px;
                     left: auto;
         
                     .hexagon{
                         left: auto;
-                        right: -75px;
+                        right: -100px;
                     }
     
                     &--aBitLess{
-                        right: -44px;
+                        right: -144px;
                     }
                 }
             }
@@ -292,52 +290,38 @@
     }
     
     .pion{
-        position: absolute;
-        width: 48px;
-        z-index: 20;
-        left: 52px;
-        top: 82px;
-        pointer-events: none;
+        width: 70px;
+        left: 132px;
+        top: 168px;
     
         &--pos{
-            &1{
-                pointer-events: all;
-                transition: 0.4s;
-            }
     
             &2{
-                transition: 0.4s;
-                transform: translateX(208px) translateY(66px);
+                transform: translateX(434px) translateY(100px);
             }
     
             &3{
-                transition: 0.4s;
-                transform: translateY(132px);
+                transform: translateY(200px);
             }
     
             &4{
-                transition: 0.4s;
-                transform: translateX(208px) translateY(196px);
+                transform: translateX(434px) translateY(300px);
             }
     
             &5{
-                transition: 0.4s;
-                transform: translateY(262px);
+                transform: translateY(400px);
             }
     
             &6{
-                transition: 0.4s;
-                transform: translateX(208px) translateY(326px);
+                transform: translateX(434px) translateY(500px);
             }
     
             &7{
-                transition: 0.4s;
-                transform: translateY(392px);
+                transform: translateY(600px);
             }
     
             &8{
-                transition: 0.4s;
-                transform: translateX(208px) translateY(456px);
+                transform: translateX(434px) translateY(700px);
             }
         }
     }

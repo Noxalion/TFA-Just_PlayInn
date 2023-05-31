@@ -187,5 +187,35 @@ body{
 /** Desktop **/
 
 @media (min-width: 1000px) {
+    body{
+        font-size: 18px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
     
+    .title{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    
+    .highlight_Paragraph{
+        font-size: 22px;
+    }
+    
+    .btn{
+        &--details{
+            &Close{
+                margin-left: calc(100% - 100px);
+                width: 120px;
+                height: 120px;
+            }
+        }
+    
+        &Slider{
+            &--left, &--right{
+                width: 52px;
+                height: 60px;
+            }
+        }
+    }
 }

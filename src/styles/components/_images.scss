@@ -155,3 +155,79 @@
         padding-left: 120px;
     }
 }
+
+
+
+@media (min-width: 1000px) {
+    .imgDeco{
+        margin-left: 200px;
+        margin-right: 200px;
+
+        &--echec{
+            margin-left: 220px;
+            margin-right: 220px;
+        }
+    }
+
+    .imgDetails{
+        max-width: 240px;
+        max-height: 240px;
+    }
+
+    .chargeContainer{
+        width: calc(100% + 24px);
+    
+        &__fond{
+            border-radius: 60px 0 0 60px;
+        }
+    }
+    .imgCharge{
+        width: 85%;
+    }
+    
+    .feteContainer{
+        width: calc(100% + 48px);
+        left: -24px;
+    }
+    .imgFete{
+        width: 95%;
+        transform: translateX(20px);
+        padding-bottom: 10%;
+    }
+    
+    .carteContainer{
+        &__fond{
+            height: 60%;
+        }
+    }
+    .imgCartes{
+        width: 50%;
+        padding-left: 140px;
+        padding-bottom: 80px;
+    }
+
+    .imgLoup{
+        width: 65%;
+        padding-left: 120px;
+    }
+
+    .imgFlush{
+        width: 80%;
+        padding-left: 60px;
+    }
+
+    .imgLoose{
+        width: 70%;
+        padding-left: 100px;
+    }
+
+    .imgRegarde{
+        width: 70%;
+        padding-left: 80px;
+    }
+
+    .imgDe{
+        width: 65%;
+        padding-left: 120px;
+    }
+}

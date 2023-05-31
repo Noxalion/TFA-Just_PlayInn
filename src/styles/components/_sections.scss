@@ -107,3 +107,54 @@
         }
     }
 }
+
+
+
+
+@media (min-width: 1000px) {
+    .spaceBelow{
+        margin-bottom: 20px;
+    }
+    
+    .middleSpaceBelow{
+        margin-bottom: 40px;
+
+        &--bigger{
+            margin-bottom: 80px;
+        }
+    }
+    
+    .spaceForAnchor{
+        padding-top: 180px;
+    }
+    
+    .bigSpaceUnder{
+        margin-top: 180px;
+    }
+    
+    .bigSpaceBelow{
+        margin-bottom: 180px;
+
+        &--smaller{
+            margin-bottom: 80px;
+        }
+    }
+    
+    .list{
+        margin-left: 16px;
+    }
+    
+    .bg-purple{
+        &__fond{
+            padding-left: 24px;
+            padding-right: 24px;
+            top: 0px;
+            left: -24px;
+        
+    
+            &--solutions{
+                top: 8%;
+            }
+        }
+    }
+}

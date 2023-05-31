@@ -46,3 +46,20 @@
         }
     }
 }
+
+
+
+@media (min-width: 1000px) {
+    .footer{
+        border-radius: 48px 48px 0 0;
+        left: -24px;
+        right: -24px;
+        padding: 48px 24px;
+        font-size: 20px;
+    
+        &__credits{
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}

@@ -1338,7 +1338,8 @@ body {
     font-size: 22px;
   }
   .btn--detailsOpen {
-    max-width: 257px;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .btn--detailsClose {
     margin-left: calc(100% - 100px);

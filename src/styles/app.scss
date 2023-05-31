@@ -205,7 +205,7 @@ body{
     .btn{
         &--details{
             &Open{
-                max-width: 257px;
+                width: fit-content;
             }
             
             &Close{

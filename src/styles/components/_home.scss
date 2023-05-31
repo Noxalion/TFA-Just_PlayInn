@@ -76,20 +76,19 @@
         left: -24px;
         right: -24px;
     
-        padding-top: 54px;
+        padding-top: 24px;
         padding-left: 24px;
         padding-right: 24px;
         margin-top: 0;
         height: 1080px;
         background-image: url(../assets/images/sections/accueil_desktop.svg);
-        background-position: center center;
+        background-position: center -96px;
         background-size: 120%;
         
     
         &__title{
             margin-left: auto;
             margin-right: auto;
-            margin-top: 32px;
             width: 60%;
             height: 160px;
             background-size: 100%;
@@ -97,10 +96,10 @@
         }
     
         &__subtitle{
-            position: relative;
-            top: -230px;
+            position: absolute;
+            width: calc(100% - 48px);
+            top: 92.5%;
             font-size: 36px;
-            text-align: center;
             margin-bottom: 0;
             padding-bottom: 24px;
         }

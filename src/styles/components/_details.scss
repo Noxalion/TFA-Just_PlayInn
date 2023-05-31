@@ -210,6 +210,7 @@
 
 @media (min-width: 1000px) {
     .details{
+        display: none;
         position: initial;
         z-index: 30;
         overflow: scroll;

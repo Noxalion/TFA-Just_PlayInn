@@ -1,1 +1,38 @@
 /* grille */
+
+@media (min-width: 1000px) {
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        column-gap: 18px;
+
+        &__el{
+            grid-column-start: 4;
+            grid-column-end: 9;
+        }
+
+        &-start{
+
+            &1{
+                grid-column-start: 1;
+            }
+            &11{
+                grid-column-start: 11;
+            }
+        }
+
+        &-end{
+
+            &-1{
+                grid-column-end: -1;
+            }
+            &10{
+                grid-column-end: 10;
+            }
+            &11{
+                grid-column-end: 11;
+            }
+        }
+    }
+}

@@ -118,9 +118,6 @@
   opacity: 1;
   background-image: url(../assets/images/sections/hexagone-nav-active.svg);
 }
-.nav__el .anchor:hover .hexagon, .nav__el .anchor:focus .hexagon, .nav__el .anchor:active .hexagon {
-  opacity: 1;
-}
 .nav__el .anchor--onRight {
   position: relative;
   right: -48px;
@@ -133,6 +130,9 @@
 .nav__el .anchor--onRight--aBitLess {
   right: -44px;
 }
+.nav__el:hover .anchor .hexagon, .nav__el:focus .anchor .hexagon, .nav__el:active .anchor .hexagon {
+  opacity: 1;
+}
 
 .pion {
   position: absolute;
@@ -143,7 +143,6 @@
   pointer-events: none;
 }
 .pion--pos1 {
-  pointer-events: all;
   transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
 }
 .pion--pos2 {
@@ -262,7 +261,7 @@
 }
 @media (min-width: 1000px) {
   .menu {
-    width: 20%;
+    width: 240px;
     height: calc(100% - 48px);
     top: 0;
     left: 0;
@@ -302,6 +301,7 @@
     padding-bottom: 34px;
     margin-left: 24px;
     margin-right: 0;
+    margin-bottom: 18px;
   }
   .nav__el .anchorDetails {
     display: block;
@@ -316,6 +316,11 @@
     left: 70px;
     bottom: 1px;
     position: absolute;
+    opacity: 0.7;
+  }
+  .nav__el .anchorDetails:hover, .nav__el .anchorDetails:focus, .nav__el .anchorDetails:active {
+    opacity: 1;
+    transition: 0.3s;
   }
   .nav__el .anchor {
     position: relative;
@@ -332,29 +337,14 @@
     top: -4px;
     width: 59px;
     height: 70px;
-    transform: rotateZ(90deg);
-    opacity: 0.7;
-    filter: drop-shadow(3px 3px 0px #260F26);
-    transition: 0.3s;
   }
   .nav__el .anchor--active {
     transition: 0.3s;
     color: #4e364e;
   }
-  .nav__el .anchor--active .hexagon {
-    transition: 0.3s;
-    opacity: 1;
-    background-image: url(../assets/images/sections/hexagone-nav-active.svg);
-  }
   .nav__el .anchor--active .nom {
     opacity: 1;
     transition: opacity 0.3s;
-  }
-  .nav__el .anchor:hover .hexagon, .nav__el .anchor:focus .hexagon, .nav__el .anchor:active .hexagon {
-    opacity: 1;
-  }
-  .nav__el .anchor:hover .nom, .nav__el .anchor:focus .nom, .nav__el .anchor:active .nom {
-    opacity: 1;
   }
   .nav__el .anchor--onRight {
     position: relative;
@@ -365,45 +355,38 @@
     left: -75px;
     right: auto;
   }
+  .nav__el:hover .anchor .hexagon, .nav__el:focus .anchor .hexagon, .nav__el:active .anchor .hexagon {
+    opacity: 1;
+  }
+  .nav__el:hover .anchor .nom, .nav__el:focus .anchor .nom, .nav__el:active .anchor .nom {
+    opacity: 1;
+  }
   .pion {
-    position: absolute;
-    width: 48px;
-    z-index: 20;
-    left: 52px;
-    top: 82px;
+    width: 52px;
+    left: 46px;
+    top: 102px;
     pointer-events: none;
   }
-  .pion--pos1 {
-    pointer-events: all;
-    transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
-  }
   .pion--pos2 {
-    transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
-    transform: translateX(208px) translateY(66px);
+    transform: translateY(80px);
   }
   .pion--pos3 {
-    transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
-    transform: translateY(132px);
+    transform: translateY(160px);
   }
   .pion--pos4 {
-    transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
-    transform: translateX(208px) translateY(196px);
+    transform: translateY(240px);
   }
   .pion--pos5 {
-    transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
-    transform: translateY(262px);
+    transform: translateY(320px);
   }
   .pion--pos6 {
-    transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
-    transform: translateX(208px) translateY(326px);
+    transform: translateY(400px);
   }
   .pion--pos7 {
-    transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
-    transform: translateY(392px);
+    transform: translateY(480px);
   }
   .pion--pos8 {
-    transition: 0.5s cubic-bezier(0.44, 0.95, 0.58, 1);
-    transform: translateX(208px) translateY(456px);
+    transform: translateY(560px);
   }
 }
 /* page d'accueil */

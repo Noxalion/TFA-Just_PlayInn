@@ -11,32 +11,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 let body = document.querySelector(".body");
 
-//BURGERMENU
+let screenWidth = screen.width;
+let widthDesktop = 1000;
+
+
 let burgerMenu = document.querySelector(".menu__btn");
 let menu = document.querySelector(".menu");
 let menuContent = document.querySelector(".menu__content");
-if (burgerMenu && menu) {
-    burgerMenu.addEventListener("click", () => {
-        menuContent.classList.remove("menu__content--anchorClicked");
-        burgerStatus();
-    });
-}
+    
+//BURGERMENU
+if (screenWidth < widthDesktop) {
 
-
-let anchor = document.querySelectorAll(".anchor");
-if (anchor) {
-    for (let i = 0; i < anchor.length; i++) {
-        anchor[i].addEventListener("click", () => {
-            menuContent.classList.add("menu__content--anchorClicked");
+    //quand clique sur le bouton menu
+    if (burgerMenu && menu) {
+        burgerMenu.addEventListener("click", () => {
+            menuContent.classList.remove("menu__content--anchorClicked");
             burgerStatus();
         });
     }
+
+    //quand clique sur une ancre
+    let anchor = document.querySelectorAll(".anchor");
+    if (anchor) {
+        for (let i = 0; i < anchor.length; i++) {
+            anchor[i].addEventListener("click", () => {
+                menuContent.classList.add("menu__content--anchorClicked");
+                burgerStatus();
+            });
+        }
+    }
+
+    //changeur de status du burgermenu
+    function burgerStatus(){
+        menu.classList.toggle("open");
+        stopScroll();
+    }
 }
 
-function burgerStatus(){
-    menu.classList.toggle("open");
-    stopScroll();
-}
 
 
 
@@ -45,17 +56,22 @@ function burgerStatus(){
 let zonesDetails = document.querySelectorAll(".details");
 let btnsDetails = document.querySelectorAll(".btn--detailsOpen");
 let btnsFerme = document.querySelectorAll(".btn--detailsClose");
+
 if (zonesDetails && btnsDetails && btnsFerme) {
     for (let i = 0; i < btnsDetails.length; i++) {
         //pour ouvrir
         btnsDetails[i].addEventListener("click", () => {
             zoneDetailOpen(i);
-            stopScroll();
+            if (screenWidth < widthDesktop) {
+                stopScroll();
+            }          
         });
         //pour fermer
         btnsFerme[i].addEventListener("click", () => {
             zoneDetailOpen(i);
-            stopScroll();
+            if (screenWidth < widthDesktop) {
+                stopScroll();
+            }   
         }); 
     }
 }
@@ -64,10 +80,19 @@ function zoneDetailOpen(el){
     zonesDetails[el].classList.toggle("open");
 }
 
+
+
+
+
 //bloque le scroll du body quand on est dans un menu secondaire sur tell
 function stopScroll(){
         body.classList.toggle("blockScroll");
 }
+
+
+
+
+
 
 //slider Probs
 const buttonsProbs = {
@@ -125,6 +150,10 @@ function swapProbs(direction) {
     }
 }
 
+
+
+
+
 //slider Examples
 const buttonsEx = {
 	prev: document.querySelector(".btnEx--left"),
@@ -164,16 +193,29 @@ function swapEx(direction) {
 }
 
 
+
+
+
+
+
+
 //animation du menu, de la nav et du pion
 const navEls = gsap.utils.toArray(".nav__el");
 const listID = ["#introduction", "#rencontres", "#problemes", "#hypotheses", "#solutions", "#recherches", "#presentation", "#conclusion"];
 
 
 pionAnim();
+
 for (let i = 0; i < navEls.length; i++) {
     navAnim(navEls[i], i);
 }
-appartionMenu();
+
+if (screenWidth < widthDesktop) {
+    appartionMenu();
+}else{
+    appartionNav();
+}
+
 
 
 
@@ -217,3 +259,18 @@ function appartionMenu() {
         }
     })
 }
+
+function appartionNav() {
+    gsap.from(menuContent, {
+        duration: 0.3,
+        opacity: 0,
+        pointerEvents: "none",
+        scrollTrigger:{
+            trigger: listID[0],
+            toggleActions: "play none none reverse",
+            start: "top 20%",
+            end: "bottom 20%"
+        }
+    })
+}
+

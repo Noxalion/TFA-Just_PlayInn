@@ -113,30 +113,30 @@
 
 @media (min-width: 1000px) {
     .spaceBelow{
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
     
     .middleSpaceBelow{
-        margin-bottom: 40px;
+        margin-bottom: 36px;
 
         &--bigger{
-            margin-bottom: 80px;
+            margin-bottom: 54px;
         }
     }
     
     .spaceForAnchor{
-        padding-top: 180px;
+        padding-top: 216px;
     }
     
     .bigSpaceUnder{
-        margin-top: 180px;
+        margin-top: 216px;
     }
     
     .bigSpaceBelow{
-        margin-bottom: 180px;
+        margin-bottom: 216px;
 
         &--smaller{
-            margin-bottom: 80px;
+            margin-bottom: 72px;
         }
     }
     
@@ -146,14 +146,30 @@
     
     .bg-purple{
         &__fond{
-            padding-left: 24px;
-            padding-right: 24px;
-            top: 0px;
-            left: -24px;
+            padding-left: 0;
+            padding-right: 0;
+            top: 0;
+            left: 0;
         
+            &--probs{
+                top: -48px;
+                height: calc(100% + 64px);
+                border-radius: 48px;
+            }
     
             &--solutions{
-                top: 8%;
+                top: 15%;
+                width: calc(100% + 24px);
+                height: calc(86% + 9px);
+                border-radius: 48px 0 0 48px;
+            }
+
+            &--recherches{
+                top: -48px;
+                height: calc(100% + 64px);
+                border-radius: 0 48px 48px 0;
+                left: -24px;
+                width: calc(100% + 24px);
             }
         }
     }

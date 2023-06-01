@@ -924,6 +924,9 @@
 .column-start6 {
   grid-column-start: 6;
 }
+.column-start7 {
+  grid-column-start: 7;
+}
 .column-start10 {
   grid-column-start: 10;
 }
@@ -1092,12 +1095,11 @@
 }
 @media (min-width: 1000px) {
   .imgDeco {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-  .imgDeco--echec {
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 240px;
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
   .imgDetails {
     max-width: 240px;

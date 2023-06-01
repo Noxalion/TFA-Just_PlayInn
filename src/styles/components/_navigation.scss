@@ -334,7 +334,7 @@
 
 @media (min-width: 1000px) {
     .menu{
-        width: 240px;
+        width: 176px;
         height: calc(100% - 48px);
         top: 0;
         left: 0;
@@ -370,12 +370,12 @@
     
         &__el{
             position: relative;
-            font-size: 20px;
+            font-size: 16px;
             padding-top: 0;
-            padding-bottom: 34px;
-            margin-left: 24px;
+            padding-bottom: 18px;
+            margin-left: 18px;
             margin-right: 0;
-            margin-bottom: 18px;
+            margin-bottom: 24px;
     
             .anchorDetails{
                 display: block;
@@ -385,10 +385,10 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 filter: drop-shadow(-3px 3px 0px $color-text-highlight);
-                width: 36px;
-                height: 31px;
-                left: 70px;
-                bottom: 1px;
+                width: 29px;
+                height: 25px;
+                left: 50px;
+                bottom: -10px;
                 position: absolute;
                 opacity: 0.7;
 
@@ -400,8 +400,7 @@
     
             .anchor{
                 position: relative;
-                color: $color-title;
-                left: 80px;
+                left: 52px;
                 transition: 0.3s;
 
                 .nom{
@@ -410,15 +409,14 @@
                 }
     
                 .hexagon{
-                    left: -75px;
+                    left: -55px;
                     top: -4px;
-                    width: 59px;
-                    height: 70px;
+                    width: 45px;
+                    height: 54px;
                 }
                 
                 &--active{
                     transition: 0.3s;
-                    color: $color-text;
 
                     .nom{
                         opacity: 1;
@@ -429,10 +427,8 @@
                 &--onRight{
                     position: relative;
                     right: auto;
-                    left: 80px;
         
                     .hexagon{
-                        left: -75px;
                         right: auto;
                     }
                 }
@@ -453,38 +449,38 @@
     }
     
     .pion{
-        width: 54px;
-        left: 20px;
-        top: -30px;
+        width: 42px;
+        left: 8px;
+        top: -26px;
         pointer-events: none;
     
         &--pos{    
             &2{
-                transform: translateY(80px);
+                transform: translateY(65px);
             }
     
             &3{
-                transform: translateY(160px);
+                transform: translateY(130px);
             }
     
             &4{
-                transform: translateY(240px);
+                transform: translateY(195px);
             }
     
             &5{
-                transform: translateY(320px);
+                transform: translateY(260px);
             }
     
             &6{
-                transform: translateY(400px);
+                transform: translateY(325px);
             }
     
             &7{
-                transform: translateY(480px);
+                transform: translateY(390px);
             }
     
             &8{
-                transform: translateY(560px);
+                transform: translateY(455px);
             }
         }
     }

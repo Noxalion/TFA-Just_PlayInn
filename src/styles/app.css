@@ -261,7 +261,7 @@
 }
 @media (min-width: 1000px) {
   .menu {
-    width: 240px;
+    width: 176px;
     height: calc(100% - 48px);
     top: 0;
     left: 0;
@@ -293,12 +293,12 @@
   }
   .nav__el {
     position: relative;
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 0;
-    padding-bottom: 34px;
-    margin-left: 24px;
+    padding-bottom: 18px;
+    margin-left: 18px;
     margin-right: 0;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
   }
   .nav__el .anchorDetails {
     display: block;
@@ -308,10 +308,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     filter: drop-shadow(-3px 3px 0px #260F26);
-    width: 36px;
-    height: 31px;
-    left: 70px;
-    bottom: 1px;
+    width: 29px;
+    height: 25px;
+    left: 50px;
+    bottom: -10px;
     position: absolute;
     opacity: 0.7;
   }
@@ -321,8 +321,7 @@
   }
   .nav__el .anchor {
     position: relative;
-    color: #934EBF;
-    left: 80px;
+    left: 52px;
     transition: 0.3s;
   }
   .nav__el .anchor .nom {
@@ -330,14 +329,13 @@
     transition: opacity 0.3s;
   }
   .nav__el .anchor .hexagon {
-    left: -75px;
+    left: -55px;
     top: -4px;
-    width: 59px;
-    height: 70px;
+    width: 45px;
+    height: 54px;
   }
   .nav__el .anchor--active {
     transition: 0.3s;
-    color: #4e364e;
   }
   .nav__el .anchor--active .nom {
     opacity: 1;
@@ -346,10 +344,8 @@
   .nav__el .anchor--onRight {
     position: relative;
     right: auto;
-    left: 80px;
   }
   .nav__el .anchor--onRight .hexagon {
-    left: -75px;
     right: auto;
   }
   .nav__el:hover .anchor .hexagon, .nav__el:focus .anchor .hexagon, .nav__el:active .anchor .hexagon {
@@ -359,31 +355,31 @@
     opacity: 1;
   }
   .pion {
-    width: 54px;
-    left: 20px;
-    top: -30px;
+    width: 42px;
+    left: 8px;
+    top: -26px;
     pointer-events: none;
   }
   .pion--pos2 {
-    transform: translateY(80px);
+    transform: translateY(65px);
   }
   .pion--pos3 {
-    transform: translateY(160px);
+    transform: translateY(130px);
   }
   .pion--pos4 {
-    transform: translateY(240px);
+    transform: translateY(195px);
   }
   .pion--pos5 {
-    transform: translateY(320px);
+    transform: translateY(260px);
   }
   .pion--pos6 {
-    transform: translateY(400px);
+    transform: translateY(325px);
   }
   .pion--pos7 {
-    transform: translateY(480px);
+    transform: translateY(390px);
   }
   .pion--pos8 {
-    transform: translateY(560px);
+    transform: translateY(455px);
   }
 }
 /* page d'accueil */

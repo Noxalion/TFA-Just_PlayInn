@@ -131,6 +131,12 @@
     .spaceForAnchor{
         padding-top: 296px;
     }
+
+    @media (max-height: 899px) {
+        .spaceForAnchor{
+            padding-top: 126px;
+        }
+    }
     
     .bigSpaceUnder{
         margin-top: 216px;
@@ -152,7 +158,29 @@
             flex-wrap: wrap;
 
             &__el{
-                margin-left: 48px;
+
+                &:nth-child(2){
+                    margin-left: 48px;
+                }
+                
+            }
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .spaceBelow--adaptedSmallPc{
+            margin-bottom: 9px;
+        }
+
+        .list--purple{
+            display: block;
+
+            &__el{
+                margin-bottom: 6px;
+
+                &:nth-child(2){
+                    margin-left: 0;
+                }
             }
         }
     }

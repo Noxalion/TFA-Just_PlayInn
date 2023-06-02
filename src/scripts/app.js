@@ -69,7 +69,7 @@ if (zonesDetails && btnsDetails && btnsFerme) {
                 stopScroll();
             }else{
                 zoneContainerOpen(i);
-                anchorDetails[i].classList.add("anchorDetails--active");
+                anchorDetails[i].classList.toggle("anchorDetails--active");
             }
         });
         //pour fermer

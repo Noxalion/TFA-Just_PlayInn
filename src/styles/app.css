@@ -584,15 +584,26 @@
   .spaceForAnchor {
     padding-top: 296px;
   }
+}
+@media (min-width: 1000px) and (max-height: 899px) {
+  .spaceForAnchor {
+    padding-top: 126px;
+  }
+}
+@media (min-width: 1000px) {
   .bigSpaceUnder {
     margin-top: 216px;
   }
+}
+@media (min-width: 1000px) {
   .bigSpaceBelow {
     margin-bottom: 216px;
   }
   .bigSpaceBelow--smaller {
     margin-bottom: 72px;
   }
+}
+@media (min-width: 1000px) {
   .list {
     margin-left: 16px;
   }
@@ -600,9 +611,25 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .list--purple__el {
+  .list--purple__el:nth-child(2) {
     margin-left: 48px;
   }
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .spaceBelow--adaptedSmallPc {
+    margin-bottom: 9px;
+  }
+  .list--purple {
+    display: block;
+  }
+  .list--purple__el {
+    margin-bottom: 6px;
+  }
+  .list--purple__el:nth-child(2) {
+    margin-left: 0;
+  }
+}
+@media (min-width: 1000px) {
   .bg-purple__fond {
     padding-left: 0;
     padding-right: 0;
@@ -835,13 +862,6 @@
     transform: translateX(0);
     transition: 0.8s cubic-bezier(0.11, 0.99, 0.49, 1);
   }
-}
-@media (min-width: 1000px) and (max-height: 899px) {
-  .detailsContainer--adaptedSmallPc {
-    top: 216px;
-  }
-}
-@media (min-width: 1000px) {
   .listProb {
     list-style: none;
   }
@@ -866,15 +886,11 @@
   .listProb__title--1 {
     background-image: url(../assets/images/details/v1.svg);
   }
-}
-@media (min-width: 1000px) {
   .borderUnder {
     border-top: #934EBF 5px solid;
     border-radius: 3px;
     padding-top: 36px;
   }
-}
-@media (min-width: 1000px) {
   .probs {
     overflow: hidden;
     display: grid;
@@ -901,8 +917,6 @@
   .probs .next--prob {
     transform: translateX(calc(100% + 24px));
   }
-}
-@media (min-width: 1000px) {
   .examples {
     list-style: none;
     overflow: hidden;
@@ -928,16 +942,12 @@
   .examples .next--ex {
     transform: translateX(calc(100% + 24px));
   }
-}
-@media (min-width: 1000px) {
   .Example__title {
     font-size: 20px;
     font-family: "congenial";
     font-weight: 700;
     color: #3F49A6;
   }
-}
-@media (min-width: 1000px) {
   .btnContainer {
     margin-top: 24px;
     margin-bottom: 54px;

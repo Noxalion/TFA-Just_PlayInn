@@ -163,18 +163,36 @@ function swapProbs(direction) {
 	}
 
     function checkProbsSize() {    
+        const arrowContainer = document.querySelector(".btnContainer--onEnd");
+
         if (direction === "right") {
             if (nextProbEl.classList.contains("probs__prob--smaller")) {
                 probsContainerEl.classList.add("probs--smaller");
+                
+                if (screenWidth >= widthDesktop) {
+                    arrowContainer.classList.add("btnContainer--smaller")
+                }
             }else{
                 probsContainerEl.classList.remove("probs--smaller");
+
+                if (screenWidth >= widthDesktop) {
+                    arrowContainer.classList.remove("btnContainer--smaller")
+                }
             }
     
         } else if (direction === "left") {
             if (previousProbEl.classList.contains("probs__prob--smaller")) {
                 probsContainerEl.classList.add("probs--smaller");
+
+                if (screenWidth >= widthDesktop) {
+                    arrowContainer.classList.add("btnContainer--smaller")
+                }
             }else{
                 probsContainerEl.classList.remove("probs--smaller");
+
+                if (screenWidth >= widthDesktop) {
+                    arrowContainer.classList.remove("btnContainer--smaller")
+                }
             }
         }
     }

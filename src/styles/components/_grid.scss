@@ -26,6 +26,9 @@
             &3{
                 grid-column-start: 3;
             }
+            &4{
+                grid-column-start: 4;
+            }
             &5{
                 grid-column-start: 5;
             }
@@ -47,6 +50,15 @@
     
             &-1{
                 grid-column-end: -1;
+            }
+            &4{
+                grid-column-end: 4;
+            }
+            &7{
+                grid-column-end: 7;
+            }
+            &8{
+                grid-column-end: 8;
             }
             &10{
                 grid-column-end: 10;

@@ -176,8 +176,27 @@
     }
 
     .imgDetails{
-        max-width: 240px;
-        max-height: 240px;
+        max-width: none;
+        max-height: none;
+        position: absolute;
+
+        &--magasin{
+            width: 90%;
+            margin-left: 5%;
+            top: 20%;
+        }
+
+        &--casque{
+            width: 90%;
+            margin-left: 5%;
+            top: 74%;
+        }
+
+        &--portedocument{
+            width: 80%;
+            margin-left: 10%;
+            top: 25%;
+        }
     }
 
     .chargeContainer{
@@ -247,7 +266,7 @@
         width: 100%;
         padding-left: 0;
         position: absolute;
-        top: 8%;
+        top: 2%;
     }
 
     .imgRegarde{

@@ -216,7 +216,7 @@ body{
     .btn{
         &--details{
             &Open{
-                width: fit-content;
+                width: max-content;
             }
             
             &Close{
@@ -250,8 +250,14 @@ body{
     
         &Slider{
             &--left, &--right{
-                width: 52px;
-                height: 60px;
+                width: 63px;
+                height: 72px;
+            }
+            &--left{
+                justify-self: start;
+            }
+            &--right{
+                justify-self: end;
             }
         }
     }

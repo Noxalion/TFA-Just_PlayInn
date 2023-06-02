@@ -114,6 +114,10 @@
 @media (min-width: 1000px) {
     .spaceBelow{
         margin-bottom: 24px;
+
+        &--smaller{
+            margin-bottom: 18px;
+        }
     }
     
     .middleSpaceBelow{
@@ -125,7 +129,7 @@
     }
     
     .spaceForAnchor{
-        padding-top: 216px;
+        padding-top: 296px;
     }
     
     .bigSpaceUnder{
@@ -142,6 +146,15 @@
     
     .list{
         margin-left: 16px;
+
+        &--purple{
+            display: flex;
+            flex-wrap: wrap;
+
+            &__el{
+                margin-left: 48px;
+            }
+        }
     }
     
     .bg-purple{

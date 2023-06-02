@@ -130,7 +130,7 @@
         
         <p class="grid__el">Par contre, le jeu, c’est extrêmement large comme mot. Ici, je parle des jeux physiques: jeux de cartes, de société, wargames… J’avais déjà entendu des gens se plaindre un peu des organisations autour de ça, c’est pourquoi j’ai décidé de partir là-dessus.</p>
     
-        <img class="bigSpaceUnder imgDeco grid__el column-start7 column-end10" src="assets/images/decos/cartes.svg" alt="jeu de cartes traditionnelles">
+        <img class="bigSpaceUnder imgDeco grid__el column-start7 column-end10 imgDeco--cartes" src="assets/images/decos/cartes.svg" alt="jeu de cartes traditionnelles">
     </section>
 
 
@@ -144,21 +144,26 @@
 
         <img class="imgRegarde grid__el" src="assets/images/sections/rencontres.svg" alt="garçon marocain attrapant un garçon à barbe rousse par l'épaule et pointant l'horizon de la main; en face d'eux, une table avec des figurines de wargame">
 
-        <div class="details">
-            <button class="btn btn--detailsClose">Fermer les rencontres</button>
-            <h3 class="title middleSpaceBelow">Interview d'utilisateurs</h3>
+        <div class="detailsContainer grid__el column-start3 column-end-1">
+            <div class="btnArrowContainer column-start2 column-end-1">
+                <button class="btn btn--detailsArrow">Fermer les rencontres</button>
+            </div>
+            <section class="details column-start2">
+                <button class="btn btn--detailsClose">Fermer les rencontres</button>
+                <h3 class="title middleSpaceBelow">Interview d'utilisateurs</h3>
 
-            <p class="highlight_Paragraph middleSpaceBelow">Pour débuter le projet, j’ai pris contact et rencontré les joueurs et les organisateurs. Pour ce faire, j’ai d’abord cherché à entrer en contact avec des magasins, ludothèques ou autres lieux spécialisés dans le milieu.</p>
+                <p class="highlight_Paragraph middleSpaceBelow">Pour débuter le projet, j’ai pris contact et rencontré les joueurs et les organisateurs. Pour ce faire, j’ai d’abord cherché à entrer en contact avec des magasins, ludothèques ou autres lieux spécialisés dans le milieu.</p>
+                
+                <img class="middleSpaceBelow imgDetails" src="assets/images/details/magasin.svg" alt="petit magasin">
+                
+                <p class="middleSpaceBelow">Comme départ, je suis allé à l’Imaginarium, un magasin de jeux dans le centre de Namur que je connaissais déjà et où je savais que des événements avaient lieu. Là-bas, j’ai assisté à un tournoi de Yu-gi-oh où j’espérais interviewer quelques personnes mais la dure réalité des choses m’a rattrapée. En effet, en tournoi, les joueurs sont confrontés les uns aux autres en duel avec un temps de réflexion limité. De plus, les joueurs sont rarement en nombre impair, il est donc assez dûr d’avoir quelqu’un à part pendant ce genre d’événement. J’ai tout de même pu questionner deux-trois personnes et prendre des notes utiles mais par la suite, j’ai privilégié le distanciel.</p>
+                <p class="middleSpaceBelow">J’ai donc rejoint un serveur discord sur lequel j’ai pu interviewer des joueurs en appel vocal. Des groupes Facebook de Warhammer et de jeux de société m’ont également permis d’obtenir quelques réponses supplémentaires. A chaque discussion, j’ai écrit un rapport et chaque rapport a été stocké dans un 
+                    <a class="link" href="https://docs.google.com/spreadsheets/d/1I6Dt8Vgk7x0FUfa0s4kw3Qi98GFG965aztoK41sBN4k/edit?usp=sharing">google sheet</a>
+                    pour analyse par la suite.
+                </p>
             
-            <img class="middleSpaceBelow imgDetails" src="assets/images/details/magasin.svg" alt="petit magasin">
-            
-            <p class="middleSpaceBelow">Comme départ, je suis allé à l’Imaginarium, un magasin de jeux dans le centre de Namur que je connaissais déjà et où je savais que des événements avaient lieu. Là-bas, j’ai assisté à un tournoi de Yu-gi-oh où j’espérais interviewer quelques personnes mais la dure réalité des choses m’a rattrapée. En effet, en tournoi, les joueurs sont confrontés les uns aux autres en duel avec un temps de réflexion limité. De plus, les joueurs sont rarement en nombre impair, il est donc assez dûr d’avoir quelqu’un à part pendant ce genre d’événement. J’ai tout de même pu questionner deux-trois personnes et prendre des notes utiles mais par la suite, j’ai privilégié le distanciel.</p>
-            <p class="middleSpaceBelow">J’ai donc rejoint un serveur discord sur lequel j’ai pu interviewer des joueurs en appel vocal. Des groupes Facebook de Warhammer et de jeux de société m’ont également permis d’obtenir quelques réponses supplémentaires. A chaque discussion, j’ai écrit un rapport et chaque rapport a été stocké dans un 
-                <a class="link" href="https://docs.google.com/spreadsheets/d/1I6Dt8Vgk7x0FUfa0s4kw3Qi98GFG965aztoK41sBN4k/edit?usp=sharing">google sheet</a>
-                 pour analyse par la suite.
-            </p>
-        
-            <img class="bigSpaceBelow imgDetails" src="assets/images/details/casque.svg" alt="casque audio & logo de Discord">
+                <img class="bigSpaceBelow imgDetails" src="assets/images/details/casque.svg" alt="casque audio & logo de Discord">
+            </section>
         </div>
 
         <img class="bigSpaceUnder imgDeco imgDeco--echec grid__el  column-start7 column-end10" src="assets/images/decos/echec.svg" alt="roi et reine d'échecs">
@@ -170,68 +175,73 @@
     <section id="problemes" class="spaceForAnchor grid">
         <div class="bg-purple grid__el column-start1 column-end-1 grid">
             <div class="bg-purple__fond bg-purple__fond--probs grid__el column-start3 column-end14"></div>
-            <h2 class="title title--dark middleSpaceBelow grid__el column-end11">Prendre conscience des embûches</h2>
+            <h2 class="title title--dark middleSpaceBelow grid__el column-end13">Prendre conscience des embûches</h2>
 
-            <p class="highlight_Paragraph spaceBelow grid__el column-end10">Durant ces rencontres avec les utilisateurs, j’ai essayé d’identifier quelques problèmes récurrents. J’ai su mettre le doigt sur trois points qui me semblaient ressortir:</p>
-            <ul class="highlight_Paragraph highlight_Paragraph--purpleDarker middleSpaceBelow list grid__el column-end10">
-                <li class="spaceBelow">difficulté à avoir des locaux;</li>
-                <li class="spaceBelow">soucis de communication;</li>
+            <p class="highlight_Paragraph spaceBelow spaceBelow--smaller grid__el column-end10">Durant ces rencontres avec les utilisateurs, j’ai essayé d’identifier quelques problèmes récurrents. J’ai su mettre le doigt sur trois points qui me semblaient ressortir:</p>
+            <ul class="highlight_Paragraph highlight_Paragraph--purpleDarker middleSpaceBelow list list--purple grid__el column-end11 column-end--adaptedSmallPc">
+                <li class="spaceBelow spaceBelow--smaller">difficulté à avoir des locaux;</li>
+                <li class="spaceBelow spaceBelow--smaller list--purple__el">soucis de communication;</li>
                 <li>certains joueurs désagréables. </li>
             </ul>
-            <p class="highlight_Paragraph middleSpaceBelow grid__el column-end10">Je pensais que le deuxième serait le plus intéressant mais j’ai assez rapidement changé de focus en faveur du premier point, celui-ci étant finalement plus attrayant.</p>
+            <p class="highlight_Paragraph highlight_Paragraph--desactivated middleSpaceBelow grid__el column-end10">Je pensais que la communication serait le plus intéressant mais j’ai assez rapidement changé de focus en faveur des locaux, celui-ci étant finalement plus attrayant.</p>
             <button class="btn btn--detailsOpen middleSpaceBelow grid__el">Déceler les problèmes</button>
 
             <img class="imgLoose grid__el column-start11 column-end-1" src="assets/images/sections/problemes.svg" alt="garçon marocain en sueur face à son adversaire lors d'un wargame; il ne lui reste plus qu'une figurine contre 4 adverses">
         </div>
     
-        <div class="details">
-            <button class="btn btn--detailsClose">Fermer les problèmes</button>
-            <h3 class="title middleSpaceBelow">Reconnaître les problèmes importants</h3>
-
-            <p class="highlight_Paragraph middleSpaceBelow">Durant les interviews, j’avais un 
-                <a class="link" href="https://docs.google.com/document/d/1S1CGaG_qa8AKzRwXGZGxeBALTKU_AnZelpSlf1dgwJw/edit?usp=sharing">guide d’entretien</a>
-                 que j’ai soumis à mes utilisateurs. A l’aide de celui-ci, j’ai essayé de relever les problèmes (et même les facilités) que les joueurs et organisateurs ont pu avoir. J’ai donc posé des questions sur leur ressenti lors des événements, sur les problèmes qu’ils ont pu rencontrer pour jouer, ainsi que des questions ciblées sur la communication autour de ces événements, ayant déjà entendu dire que cela dérangeait certaines personnes.
-            </p>
-
-            <img class="middleSpaceBelow imgDetails" src="assets/images/details/portedocument.svg" alt="porte-document">
-
-            <p class="spaceBelow">Après deux ou trois interviews, j’ai relevé quelques problèmes que les utilisateurs ont pu rencontrer pour développer et voir si ses embûches seraient abordées par d’autres. J’ai ainsi noté trois anicroches substantielles :</p>
-            
-            <ul class="bigSpaceBelow listProb bigSpaceBelow--smaller">
-                <li class="spaceBelow">
-                    <span class="listProb__number">1</span>
-                     - pour les organisateurs, une éventuelle difficulté à trouver des salles facilement
-                </li>
-                <li class="spaceBelow">
-                    <span class="listProb__number">2</span>
-                     - des problèmes de communication notoires, provoquant probablement la peur des organisateurs à ne pas avoir assez de joueurs
-                </li>
-                <li>
-                    <span class="listProb__number">3</span>
-                     - certains types de joueurs avec qui il serait désagréable de jouer
-                </li>
-            </ul>
-
-            <ul class="listProb probs probs--smaller">
-                <li class="probs__prob probs__prob--smaller current--prob">
-                    <h4 class="middleSpaceBelow listProb__title listProb__title--3">3 - X</h4>
-                    <p>Le dernier point étant plus de l’ordre du social, les seules solutions viables que j’ai pu imaginer à ce moment n’étaient pas très éthique et le tout a donc été mis de côté. Le premier point ne ciblant qu'une partie des utilisateurs initialement prévus, j’ai alors privilégié le second qui me paraissait être le plus adapté jusqu’ici.</p>
-                </li>
-                <li class="probs__prob next--prob">
-                    <h4 class="middleSpaceBelow listProb__title listProb__title--2">2 - X</h4>
-                    <p class="middleSpaceBelow">J’ai ainsi continué les interviews et me suis rendu compte en rapportant les réponses des différentes personnes qu’effectivement, il est possible qu’il y ai un léger problème de communication mais celui-ci est mineur et la plupart des interrogés ne semblaient pas perturbés ou assez dérangés par cela pour développer l'intérêt d’un projet. Le problème principal étant souvent l’annonce de petits événements jugée en retard ou le manque de visibilité de certains.</p>
-                    <p>Mais comme m’a dit une personne lors d’une interview: “même un débutant trouvera [les infos pour les événements], s’il cherche vraiment il trouvera”. C’est donc sur ces mots que j’ai décidé de pivoter et de me focus finalement sur la première anicroche que j’avais pu noter: la recherche d’endroits parfois difficiles pour les organisateurs.</p>
-                </li>
-                <li class="probs__prob previous--prob">
-                    <h4 class="middleSpaceBelow listProb__title listProb__title--1">1 - v</h4>
-                    <p class="middleSpaceBelow">En effet, des quelques organisateurs avec lesquels j’ai discuté, un bon nombre m’ont parlé des salles où ils organisaient leur partie en m’en pointant le négatif, que ce soit la difficulté à trouver premièrement un lieu ou le manque de place aux endroits disponibles. Les salles et leur prospection semblaient frustrantes et surtout cette frustration semblait récurrente, au point que même un joueur m’a fait part d’insatisfactions dues à un manque de place à un événement malgré le grand nombre de joueurs attendus. </p>
-                    <p>C’est donc sur ce problème que je me suis focalisé pour la suite et pour lequel j’ai réfléchi à une aide aux organisateurs pour leur faciliter les choses et ainsi éventuellement améliorer la qualité de l’organisation des événements auxniveaux des infrastructures.</p>
-                </li>
-            </ul>
-            <div class="btnContainer btnContainer--onEnd">
-                <button class="btn btnProbs--left btnSlider--left">gauche</button>
-                <button class="btn btnProbs--right btnSlider--right">droite</button>
+        <div class="detailsContainer detailsContainer--adaptedSmallPc grid__el column-start3 column-end-1">
+            <div class="btnArrowContainer column-start2 column-end-1">
+                <button class="btn btn--detailsArrow">Fermer les problèmes</button>
             </div>
+            <section class="details column-start2">
+                <button class="btn btn--detailsClose">Fermer les problèmes</button>
+                <h3 class="title middleSpaceBelow">Reconnaître les problèmes importants</h3>
+
+                <p class="highlight_Paragraph middleSpaceBelow">Durant les interviews, j’avais un 
+                    <a class="link" href="https://docs.google.com/document/d/1S1CGaG_qa8AKzRwXGZGxeBALTKU_AnZelpSlf1dgwJw/edit?usp=sharing">guide d’entretien</a>
+                    que j’ai soumis à mes utilisateurs. A l’aide de celui-ci, j’ai essayé de relever les problèmes (et même les facilités) que les joueurs et organisateurs ont pu avoir. J’ai donc posé des questions sur leur ressenti lors des événements, sur les problèmes qu’ils ont pu rencontrer pour jouer, ainsi que des questions ciblées sur la communication autour de ces événements, ayant déjà entendu dire que cela dérangeait certaines personnes.
+                </p>
+
+                <img class="middleSpaceBelow imgDetails" src="assets/images/details/portedocument.svg" alt="porte-document">
+
+                <p class="spaceBelow">Après deux ou trois interviews, j’ai relevé quelques problèmes que les utilisateurs ont pu rencontrer pour développer et voir si ses embûches seraient abordées par d’autres. J’ai ainsi noté trois anicroches substantielles :</p>
+                
+                <ul class="bigSpaceBelow listProb bigSpaceBelow--smaller">
+                    <li class="spaceBelow">
+                        <span class="listProb__number">1</span>
+                        - pour les organisateurs, une éventuelle difficulté à trouver des salles facilement
+                    </li>
+                    <li class="spaceBelow">
+                        <span class="listProb__number">2</span>
+                        - des problèmes de communication notoires, provoquant probablement la peur des organisateurs à ne pas avoir assez de joueurs
+                    </li>
+                    <li>
+                        <span class="listProb__number">3</span>
+                        - certains types de joueurs avec qui il serait désagréable de jouer
+                    </li>
+                </ul>
+
+                <ul class="listProb probs probs--smaller">
+                    <li class="probs__prob probs__prob--smaller current--prob">
+                        <h4 class="middleSpaceBelow listProb__title listProb__title--3">3 - X</h4>
+                        <p>Le dernier point étant plus de l’ordre du social, les seules solutions viables que j’ai pu imaginer à ce moment n’étaient pas très éthique et le tout a donc été mis de côté. Le premier point ne ciblant qu'une partie des utilisateurs initialement prévus, j’ai alors privilégié le second qui me paraissait être le plus adapté jusqu’ici.</p>
+                    </li>
+                    <li class="probs__prob next--prob">
+                        <h4 class="middleSpaceBelow listProb__title listProb__title--2">2 - X</h4>
+                        <p class="middleSpaceBelow">J’ai ainsi continué les interviews et me suis rendu compte en rapportant les réponses des différentes personnes qu’effectivement, il est possible qu’il y ai un léger problème de communication mais celui-ci est mineur et la plupart des interrogés ne semblaient pas perturbés ou assez dérangés par cela pour développer l'intérêt d’un projet. Le problème principal étant souvent l’annonce de petits événements jugée en retard ou le manque de visibilité de certains.</p>
+                        <p>Mais comme m’a dit une personne lors d’une interview: “même un débutant trouvera [les infos pour les événements], s’il cherche vraiment il trouvera”. C’est donc sur ces mots que j’ai décidé de pivoter et de me focus finalement sur la première anicroche que j’avais pu noter: la recherche d’endroits parfois difficiles pour les organisateurs.</p>
+                    </li>
+                    <li class="probs__prob previous--prob">
+                        <h4 class="middleSpaceBelow listProb__title listProb__title--1">1 - v</h4>
+                        <p class="middleSpaceBelow">En effet, des quelques organisateurs avec lesquels j’ai discuté, un bon nombre m’ont parlé des salles où ils organisaient leur partie en m’en pointant le négatif, que ce soit la difficulté à trouver premièrement un lieu ou le manque de place aux endroits disponibles. Les salles et leur prospection semblaient frustrantes et surtout cette frustration semblait récurrente, au point que même un joueur m’a fait part d’insatisfactions dues à un manque de place à un événement malgré le grand nombre de joueurs attendus. </p>
+                        <p>C’est donc sur ce problème que je me suis focalisé pour la suite et pour lequel j’ai réfléchi à une aide aux organisateurs pour leur faciliter les choses et ainsi éventuellement améliorer la qualité de l’organisation des événements auxniveaux des infrastructures.</p>
+                    </li>
+                </ul>
+                <div class="btnContainer btnContainer--onEnd">
+                    <button class="btn btnProbs--left btnSlider--left">gauche</button>
+                    <button class="btn btnProbs--right btnSlider--right">droite</button>
+                </div>
+            </section>
         </div>
 
         <img class="bigSpaceUnder imgDeco grid__el column-start7 column-end10" src="assets/images/decos/meeple.svg" alt="meeple; petit bonhomme en bois utilisé dans certains jeux de société">
@@ -251,15 +261,20 @@
             <img class="imgCartes" src="assets/images/sections/hypotheses.svg" alt="garçon marocain hésitant entre différentes cartes dans sa main">
         </div>
 
-        <div class="details">
-            <button class="btn btn--detailsClose">Fermer les hypothèses</button>
-            <h3 class="title middleSpaceBelow">Des hypothèses construites</h3>
+        <div class="detailsContainer grid__el column-start3 column-end-1">
+            <div class="btnArrowContainer column-start2 column-end-1">
+                <button class="btn btn--detailsArrow column-end1">Fermer les hypothèses</button>
+            </div>
+            <section class="details column-start2">
+                <button class="btn btn--detailsClose">Fermer les hypothèses</button>
+                <h3 class="title middleSpaceBelow">Des hypothèses construites</h3>
 
-            <p class="middleSpaceBelow">Avant de pivoter, j’aurais ainsi créé une sorte d’application servant de réseau pour les joueurs et les organisateurs, permettant ainsi d’afficher les événements les plus proches ou ceux qu’on choisit de suivre. Cela aurait permis de facilement communiquer avec les joueurs dans le cas où tout serait centralisé sur un réseau prédéfini pour cela.</p>
-            <p class="middleSpaceBelow">L’objectif était également de faciliter le plus possible l’encodage des événements pour les organisateurs, pour permettre une diffusion plus rapide et à portée de main. Malheureusement (ou heureusement), la plupart des joueurs trouvent leur compte dans la communication actuelle et les remarques faites sont plus souvent dépendantes de l’humain que du médium. Par exemple, les retards sur l’annonce des événements viennent souvent du fait que ce n’est pas l’activité principale de ceux qui les organisent.</p>
+                <p class="middleSpaceBelow">Avant de pivoter, j’aurais ainsi créé une sorte d’application servant de réseau pour les joueurs et les organisateurs, permettant ainsi d’afficher les événements les plus proches ou ceux qu’on choisit de suivre. Cela aurait permis de facilement communiquer avec les joueurs dans le cas où tout serait centralisé sur un réseau prédéfini pour cela.</p>
+                <p class="middleSpaceBelow">L’objectif était également de faciliter le plus possible l’encodage des événements pour les organisateurs, pour permettre une diffusion plus rapide et à portée de main. Malheureusement (ou heureusement), la plupart des joueurs trouvent leur compte dans la communication actuelle et les remarques faites sont plus souvent dépendantes de l’humain que du médium. Par exemple, les retards sur l’annonce des événements viennent souvent du fait que ce n’est pas l’activité principale de ceux qui les organisent.</p>
 
-            <p class="highlight_Paragraph middleSpaceBelow borderUnder">Après pivot, je me focalise sur les organisateurs et sur la recherche d’infrastructure pour les événements. J’imagine ainsi une application répertoriant les salles pouvant accueillir les joueurs. Ce serait une sorte de bibliothèque mais spécialisé pour le jeu. Cela permettrait ainsi de facilement trouver un endroit où organiser les parties en spécifiant les différentes caractéristiques de la salle, tels que la présence d’un bar, de tables propres au wargames ou autres infrastructures utiles.</p>
-            <p class="bigSpaceBelow">Dès lors, on pourrait y retrouver autant des salles permettant de réaliser de grand tournoi que des arrières boutiques acceptant d’accueillir les parties de quelques joueurs. Le but étant, comme vous l’aurez compris, que les organisateurs gagnent du temps sur la recherche de lieu et puissent plus s’investir sur le reste de l’événement et la communication avec les joueurs.</p>
+                <p class="highlight_Paragraph middleSpaceBelow borderUnder">Après pivot, je me focalise sur les organisateurs et sur la recherche d’infrastructure pour les événements. J’imagine ainsi une application répertoriant les salles pouvant accueillir les joueurs. Ce serait une sorte de bibliothèque mais spécialisé pour le jeu. Cela permettrait ainsi de facilement trouver un endroit où organiser les parties en spécifiant les différentes caractéristiques de la salle, tels que la présence d’un bar, de tables propres au wargames ou autres infrastructures utiles.</p>
+                <p class="bigSpaceBelow">Dès lors, on pourrait y retrouver autant des salles permettant de réaliser de grand tournoi que des arrières boutiques acceptant d’accueillir les parties de quelques joueurs. Le but étant, comme vous l’aurez compris, que les organisateurs gagnent du temps sur la recherche de lieu et puissent plus s’investir sur le reste de l’événement et la communication avec les joueurs.</p>
+            </section>
         </div>
 
         <img class="bigSpaceUnder imgDeco grid__el column-start7 column-end10" src="assets/images/decos/de.svg" alt="3 dés: un dé à six faces, un à huit faces et un dernier à 20 faces">
@@ -279,38 +294,43 @@
             <img class="imgFlush grid__el" src="assets/images/sections/solution.svg" alt="garçon marocain exposant une quinte flush royale avec ses deux amis stupéfait derrière lui">
         </div>
 
-        <div class="details">
-            <button class="btn btn--detailsClose">Fermer les solutions</button>
-            <h3 class="title middleSpaceBelow">L’Alexandrie des locaux pour jouer</h3>
-
-            <p class="highlight_Paragraph middleSpaceBelow">L’app serait ainsi une sorte de catalogue. Elle reporterait les endroits qui ont déjà accueilli des événements mais également ceux se mettant à disposition. On pourrait ainsi s’inscrire et proposer sa propre salle.</p>
-            
-            <img class="middleSpaceBelow imgDetails" src="assets/images/details/bibliotheque.svg" alt="étagère de bibliothèque à deux étages, avec des livres ça et là dessus">
-            
-            <p class="middleSpaceBelow">L’app ne servirait pas spécifiquement de lieu de location directe (par là je veux dire de pouvoir payer directement sur le site) car ce serait quelque chose à penser lorsque l’on développe le système économique de notre service, ce qui n’est pas le cas pour ce projet. Dans mon cas, le but principal est de pouvoir facilement mettre en contact des gens possédant une salle et les organisateurs. De simple moyen de communication serait donc envisageable.</p>
-            
-            <img class="middleSpaceBelow imgDetails" src="assets/images/details/loupe.svg" alt="loupe & entonnoir">
-
-            <p class="middleSpaceBelow--bigger">Un système de recherche permettrait de trouver des endroits selon certains paramètres tels que la localisation, la taille de la salle ou les jeux qui ont déjà été accueillis par exemple. D’autres spécificités seraient bien sûr affichables sur l’article de la salle, et par ailleurs présentes dans les filtres de recherche. On pourrait ainsi définir si une salle est accessible aux personnes à mobilité réduite, si elle présente un bar/cuisine ou s’il y a déjà des mises à disposition spéciales pour certains jeux.</p>
-            
-            <h4 class="spaceBelow Example__title">Exemples de mise à disposition:</h4>
-            <ul class="listEx examples">
-                <li class="examples__ex current--ex">
-                    <p>La plupart des jeux de cartes font appel à un tapis de jeu pour bien délimiter chaque section de celui-ci, mais les tapis sont tous différents selon le jeu. Leur taille est ainsi fort affecté par cela et change l’espace nécessaire pour le confort des joueurs.</p>
-                </li>
-                <li class="examples__ex next--ex">
-                    <p>Le jeu de cartes Magic nécessite des cartes dites Terrain qui ne se trouvent pas dans la plupart des produits en magasin donc les événements ont tendance à en mettre à disposition des joueurs</p>
-                </li>
-                <li class="examples__ex previous--ex">
-                    <p>Certaines tables sont spécialement faites pour jouer à certains jeux, tels que Warhammer qui demande des tables très spécifiques.</p>
-                </li>
-            </ul>
-            <div class="btnContainer">
-                <button class="btn btnEx--left btnSlider--left">gauche</button>
-                <button class="btn btnEx--right btnSlider--right">droite</button>
+        <div class="detailsContainer grid__el column-start3 column-end-1">
+            <div class="btnArrowContainer column-start2 column-end-1">
+                <button class="btn btn--detailsArrow column-end1">Fermer les solutions</button>
             </div>
-            
-            <p class="bigSpaceBelow">Des notes ou commentaires pourraient également permettre aux utilisateurs de trouver facilement chaussures à leur pied mais également d’essayer d’endiguer toutes formes de dérive: que ce soit humain à cause de personnes toxiques, ou des arnaques dû au système d’inscription.</p>
+            <section class="details column-start2">
+                <button class="btn btn--detailsClose">Fermer les solutions</button>
+                <h3 class="title middleSpaceBelow">L’Alexandrie des locaux pour jouer</h3>
+
+                <p class="highlight_Paragraph middleSpaceBelow">L’app serait ainsi une sorte de catalogue. Elle reporterait les endroits qui ont déjà accueilli des événements mais également ceux se mettant à disposition. On pourrait ainsi s’inscrire et proposer sa propre salle.</p>
+                
+                <img class="middleSpaceBelow imgDetails" src="assets/images/details/bibliotheque.svg" alt="étagère de bibliothèque à deux étages, avec des livres ça et là dessus">
+                
+                <p class="middleSpaceBelow">L’app ne servirait pas spécifiquement de lieu de location directe (par là je veux dire de pouvoir payer directement sur le site) car ce serait quelque chose à penser lorsque l’on développe le système économique de notre service, ce qui n’est pas le cas pour ce projet. Dans mon cas, le but principal est de pouvoir facilement mettre en contact des gens possédant une salle et les organisateurs. De simple moyen de communication serait donc envisageable.</p>
+                
+                <img class="middleSpaceBelow imgDetails" src="assets/images/details/loupe.svg" alt="loupe & entonnoir">
+
+                <p class="middleSpaceBelow--bigger">Un système de recherche permettrait de trouver des endroits selon certains paramètres tels que la localisation, la taille de la salle ou les jeux qui ont déjà été accueillis par exemple. D’autres spécificités seraient bien sûr affichables sur l’article de la salle, et par ailleurs présentes dans les filtres de recherche. On pourrait ainsi définir si une salle est accessible aux personnes à mobilité réduite, si elle présente un bar/cuisine ou s’il y a déjà des mises à disposition spéciales pour certains jeux.</p>
+                
+                <h4 class="spaceBelow Example__title">Exemples de mise à disposition:</h4>
+                <ul class="listEx examples">
+                    <li class="examples__ex current--ex">
+                        <p>La plupart des jeux de cartes font appel à un tapis de jeu pour bien délimiter chaque section de celui-ci, mais les tapis sont tous différents selon le jeu. Leur taille est ainsi fort affecté par cela et change l’espace nécessaire pour le confort des joueurs.</p>
+                    </li>
+                    <li class="examples__ex next--ex">
+                        <p>Le jeu de cartes Magic nécessite des cartes dites Terrain qui ne se trouvent pas dans la plupart des produits en magasin donc les événements ont tendance à en mettre à disposition des joueurs</p>
+                    </li>
+                    <li class="examples__ex previous--ex">
+                        <p>Certaines tables sont spécialement faites pour jouer à certains jeux, tels que Warhammer qui demande des tables très spécifiques.</p>
+                    </li>
+                </ul>
+                <div class="btnContainer">
+                    <button class="btn btnEx--left btnSlider--left">gauche</button>
+                    <button class="btn btnEx--right btnSlider--right">droite</button>
+                </div>
+                
+                <p class="bigSpaceBelow">Des notes ou commentaires pourraient également permettre aux utilisateurs de trouver facilement chaussures à leur pied mais également d’essayer d’endiguer toutes formes de dérive: que ce soit humain à cause de personnes toxiques, ou des arnaques dû au système d’inscription.</p>
+            </section>
         </div>
 
         <img class="bigSpaceUnder imgDeco grid__el column-start7 column-end10" src="assets/images/decos/uno.svg" alt="deux cartes: une changement de couleur et une 4">
@@ -330,35 +350,40 @@
             <img class="imgLoup grid__el column-start11 column-end-1" src="assets/images/sections/recherches.svg" alt="garçon marocain jaugeant son amie aux cheveux noires dont l'ombre forme un loup-garou">
         </div>
 
-        <div class="details">
-            <button class="btn btn--detailsClose">Fermer les recherches</button>
-            <h3 class="title middleSpaceBelow">Ludique & utilitaire</h3>
+        <div class="detailsContainer grid__el column-start3 column-end-1">
+            <div class="btnArrowContainer column-start2 column-end-1">
+                <button class="btn btn--detailsArrow column-end1">Fermer les recherches</button>
+            </div>
+            <section class="details column-start2">
+                <button class="btn btn--detailsClose">Fermer les recherches</button>
+                <h3 class="title middleSpaceBelow">Ludique & utilitaire</h3>
 
-            <p class="highlight_Paragraph middleSpaceBelow">Il existe pas mal de services en ligne permettant de trouver des lieux à louer: 
-               <a class="link" href="https://www.airbnb.fr/">Airbnb</a>, 
-               <a class="link" href="https://www.salles.be/">Salle.be</a>, 
-               <a class="link" href="https://fr.eventplanner.be/location-de-lieu-evenementiel/in-region-belgium.html">Eventplanner</a>
-                 … mais aucun ne propose directement d’endroits pour organiser des événements de jeux.
-            </p>
+                <p class="highlight_Paragraph middleSpaceBelow">Il existe pas mal de services en ligne permettant de trouver des lieux à louer: 
+                <a class="link" href="https://www.airbnb.fr/">Airbnb</a>, 
+                <a class="link" href="https://www.salles.be/">Salle.be</a>, 
+                <a class="link" href="https://fr.eventplanner.be/location-de-lieu-evenementiel/in-region-belgium.html">Eventplanner</a>
+                    … mais aucun ne propose directement d’endroits pour organiser des événements de jeux.
+                </p>
 
-            <p class="middleSpaceBelow">Si l’on parle d’événement, la plupart se focalisent sur les mariages, les réunions, les séminaires et autres événements similaires mais aucun ne possède de section spécifique pour les événements de jeux, qu’il soit physique ou vidéo-ludique. D’ailleurs, en cherchant un service de location de lieux pour jouer, le peu de résultat que je trouve ne remplisse pas ce que j'essaye de faire (principalement de la 
-                <a class="link" href="https://fr.tripadvisor.be/Attractions-g188644-Activities-c56-t110-Brussels.html">location de salle de jeu</a> ou 
-                <a class="link" href="https://ml-locations.be/location/jeux-divertissement-en-location/">location de jeux</a>
-                ).
-            </p>
+                <p class="middleSpaceBelow">Si l’on parle d’événement, la plupart se focalisent sur les mariages, les réunions, les séminaires et autres événements similaires mais aucun ne possède de section spécifique pour les événements de jeux, qu’il soit physique ou vidéo-ludique. D’ailleurs, en cherchant un service de location de lieux pour jouer, le peu de résultat que je trouve ne remplisse pas ce que j'essaye de faire (principalement de la 
+                    <a class="link" href="https://fr.tripadvisor.be/Attractions-g188644-Activities-c56-t110-Brussels.html">location de salle de jeu</a> ou 
+                    <a class="link" href="https://ml-locations.be/location/jeux-divertissement-en-location/">location de jeux</a>
+                    ).
+                </p>
 
-            <img class="middleSpaceBelow imgDetails" src="assets/images/details/chapeaux.svg" alt="deux petits chapeaux de fêtes en cone">
+                <img class="middleSpaceBelow imgDetails" src="assets/images/details/chapeaux.svg" alt="deux petits chapeaux de fêtes en cone">
 
-            <p class="middleSpaceBelow">C’est bien d’être efficace, c’est déjà une bonne chose, mais quand on prend des sites comme celui de 
-                <a class="link" href="https://www.games-workshop.com/fr-BE/D-accueil">Warhammer</a> ou 
-                <a class="link" href="https://en.cf-vanguard.com/">Cardfight</a>
-                , je trouve que cela ne donne pas fort envie. C’est pourquoi même si l’efficacité prime, j’aimerais tout de même rendre le design de mon app un minimum ludique. Pas exagérément non plus mais au moins faire quelques références à des jeux et rendre le tout agréable visuellement, voire divertissant comme à pu le faire ce site pour la 
-                <a class="link" href="https://banorama.banenor.no/">voie ferrée norvégienne</a>.
-            </p>
+                <p class="middleSpaceBelow">C’est bien d’être efficace, c’est déjà une bonne chose, mais quand on prend des sites comme celui de 
+                    <a class="link" href="https://www.games-workshop.com/fr-BE/D-accueil">Warhammer</a> ou 
+                    <a class="link" href="https://en.cf-vanguard.com/">Cardfight</a>
+                    , je trouve que cela ne donne pas fort envie. C’est pourquoi même si l’efficacité prime, j’aimerais tout de même rendre le design de mon app un minimum ludique. Pas exagérément non plus mais au moins faire quelques références à des jeux et rendre le tout agréable visuellement, voire divertissant comme à pu le faire ce site pour la 
+                    <a class="link" href="https://banorama.banenor.no/">voie ferrée norvégienne</a>.
+                </p>
 
-            <p class="middleSpaceBelow">Le but ici ne serait pas de troubler la lecture avec des illustrations trop complexes à certains moment mais de ramener de petits dessins “simplistes” pour agrémenter le visuel, aider à la lecture et en faire des animations si possible.</p>
-        
-            <img class="bigSpaceBelow imgDetails" src="assets/images/details/crayon.svg" alt="crayon dessinant une spirale">
+                <p class="middleSpaceBelow">Le but ici ne serait pas de troubler la lecture avec des illustrations trop complexes à certains moment mais de ramener de petits dessins “simplistes” pour agrémenter le visuel, aider à la lecture et en faire des animations si possible.</p>
+            
+                <img class="bigSpaceBelow imgDetails" src="assets/images/details/crayon.svg" alt="crayon dessinant une spirale">
+            </section>
         </div>
 
         <img class="bigSpaceUnder imgDeco grid__el column-start7 column-end10" src="assets/images/decos/chevaux.svg" alt="pièces de petits chevaux">
@@ -370,10 +395,10 @@
     <section id="presentation" class="spaceForAnchor grid">
         <h2 class="title middleSpaceBelow grid__el column-end10">Frapper un grand coup</h2>
 
-        <p class="highlight_Paragraph spaceBelow grid__el">La présentation d’un projet, c’est le moment de marquer le public. Au final, c’est probablement la partie qui se rapproche le plus d’un jeu:</p>
+        <p class="highlight_Paragraph spaceBelow spaceBelow--smaller grid__el">La présentation d’un projet, c’est le moment de marquer le public. Au final, c’est probablement la partie qui se rapproche le plus d’un jeu:</p>
         <ul class="highlight_Paragraph middleSpaceBelow list grid__el">
-            <li class="spaceBelow">on évalue la situation;</li>
-            <li class="spaceBelow">on établit la stratégie qui nous paraît la meilleure;</li>
+            <li class="spaceBelow spaceBelow--smaller">on évalue la situation;</li>
+            <li class="spaceBelow spaceBelow--smaller">on établit la stratégie qui nous paraît la meilleure;</li>
             <li>et enfin, on essaie de la suivre le plus possible.</li>
         </ul>
         <button class="btn btn--detailsOpen middleSpaceBelow grid__el">Se préparer à la charge</button>
@@ -383,27 +408,32 @@
             <img class="imgCharge" src="assets/images/sections/presentation.svg" alt="garçon marocain donnant la charge à ses unités de wargame, une épée tronçonneuse à la main">
         </div>
 
-        <div class="details">
-            <button class="btn btn--detailsClose">Fermer la présentation</button>
-            <h3 class="title middleSpaceBelow">Une présentation aux petits oignons</h3>
+        <div class="detailsContainer grid__el column-start3 column-end-1">
+            <div class="btnArrowContainer column-start2 column-end-1">
+                <button class="btn btn--detailsArrow column-end1">Fermer la présentation</button>
+            </div>
+            <section class="details column-start2">
+                <button class="btn btn--detailsClose">Fermer la présentation</button>
+                <h3 class="title middleSpaceBelow">Une présentation aux petits oignons</h3>
 
-            <p class="highlight_Paragraph spaceBelow">Durant le court temps qui m'est offert pour exposer mon travail, je devrais aborder les différents points de celui-ci. Toutefois, chaque partie ne se verra pas accorder le même temps. La répartition se ferait ainsi:</p>
-            <ul class="highlight_Paragraph highlight_Paragraph--purple list middleSpaceBelow">
-                <li class="spaceBelow">je m’attarderais le plus sur les problèmes et les solutions;</li>
-                <li class="spaceBelow">les hypothèses ne nécessitent que de concise explications;</li>
-                <li>pour le reste, le temps sera réparti de manière plus ou moins égal par section.</li>
-            </ul>
-            
-            <img class="middleSpaceBelow imgDetails" src="assets/images/details/chrono.svg" alt="chronomètre">
-            
-            <p class="middleSpaceBelow">Je développerais donc principalement  les problèmes et les solutions car ce sont des points essentiels de mon travail. Les problèmes, c’est le cœur du projet. Sans eux, rien n’aurait pu émerger. Les solutions, ce sont quant à elles la partie que j’ai le plus apprécié. C’est pourquoi ces deux sont une priorité dans ma présentation.</p>
+                <p class="highlight_Paragraph spaceBelow">Durant le court temps qui m'est offert pour exposer mon travail, je devrais aborder les différents points de celui-ci. Toutefois, chaque partie ne se verra pas accorder le même temps. La répartition se ferait ainsi:</p>
+                <ul class="highlight_Paragraph highlight_Paragraph--purple list middleSpaceBelow">
+                    <li class="spaceBelow">je m’attarderais le plus sur les problèmes et les solutions;</li>
+                    <li class="spaceBelow">les hypothèses ne nécessitent que de concise explications;</li>
+                    <li>pour le reste, le temps sera réparti de manière plus ou moins égal par section.</li>
+                </ul>
+                
+                <img class="middleSpaceBelow imgDetails" src="assets/images/details/chrono.svg" alt="chronomètre">
+                
+                <p class="middleSpaceBelow">Je développerais donc principalement  les problèmes et les solutions car ce sont des points essentiels de mon travail. Les problèmes, c’est le cœur du projet. Sans eux, rien n’aurait pu émerger. Les solutions, ce sont quant à elles la partie que j’ai le plus apprécié. C’est pourquoi ces deux sont une priorité dans ma présentation.</p>
 
-            <p class="middleSpaceBelow">Un autre aspect important sera l’introduction et la conclusion. J’ai envie de réaliser quelque chose qui claque ou qui face du moins sourire. C’est aussi le moment de faire référence au jeu et surtout de mettre en tête le projet qu’on défend. </p>
-            <p class="middleSpaceBelow">J’imaginais ainsi une introduction un peu décalée. Je commencerai en demandant si le public aime des choses qui, hors contexte du jeu, peuvent sembler perturbantes. Par exemple: “Est-ce que vous aussi vous aimez trahir vos proches ?”. Puis je désamorcerai en dévoilant que je parle ici de jeux et révèlerai ceux-ci en slide. Le tout ayant capté l’attention, je pourrais enchaîner pour expliquer le but de mon projet et entamer le reste.</p>
-            
-            <img class="middleSpaceBelow imgDetails" src="assets/images/details/amongus.svg" alt="petit personnage d'Among Us mauve">
+                <p class="middleSpaceBelow">Un autre aspect important sera l’introduction et la conclusion. J’ai envie de réaliser quelque chose qui claque ou qui face du moins sourire. C’est aussi le moment de faire référence au jeu et surtout de mettre en tête le projet qu’on défend. </p>
+                <p class="middleSpaceBelow">J’imaginais ainsi une introduction un peu décalée. Je commencerai en demandant si le public aime des choses qui, hors contexte du jeu, peuvent sembler perturbantes. Par exemple: “Est-ce que vous aussi vous aimez trahir vos proches ?”. Puis je désamorcerai en dévoilant que je parle ici de jeux et révèlerai ceux-ci en slide. Le tout ayant capté l’attention, je pourrais enchaîner pour expliquer le but de mon projet et entamer le reste.</p>
+                
+                <img class="middleSpaceBelow imgDetails" src="assets/images/details/amongus.svg" alt="petit personnage d'Among Us mauve">
 
-            <p class="bigSpaceBelow">Pour la conclusion, je ne suis pas encore certain de ce que je veux faire. Le mieux serait de résumer très brièvement le travail, de remercier le public et de dire une petite catch phrase sympathique, dans le style de la conclusion de ma landing page. Cependant, j’imagine cela mais j’aurais peut-être une meilleure idée plus tard.</p>
+                <p class="bigSpaceBelow">Pour la conclusion, je ne suis pas encore certain de ce que je veux faire. Le mieux serait de résumer très brièvement le travail, de remercier le public et de dire une petite catch phrase sympathique, dans le style de la conclusion de ma landing page. Cependant, j’imagine cela mais j’aurais peut-être une meilleure idée plus tard.</p>
+            </section>
         </div>
 
         <img class="bigSpaceUnder imgDeco grid__el column-start7 column-end10" src="assets/images/decos/scrabble.svg" alt="pièces de jeu de lettres formant le mot play">

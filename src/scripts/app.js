@@ -54,6 +54,8 @@ if (screenWidth < widthDesktop) {
 //déploiement des zones de détails
 
 let zonesDetails = document.querySelectorAll(".details");
+let btnArrow = document.querySelectorAll(".btn--detailsArrow");
+let zonesContainers = document.querySelectorAll(".detailsContainer");
 let btnsDetails = document.querySelectorAll(".btn--detailsOpen");
 let btnsFerme = document.querySelectorAll(".btn--detailsClose");
 
@@ -64,20 +66,36 @@ if (zonesDetails && btnsDetails && btnsFerme) {
             zoneDetailOpen(i);
             if (screenWidth < widthDesktop) {
                 stopScroll();
-            }          
+            }else{
+                zoneContainerClose(i);
+            }
         });
         //pour fermer
         btnsFerme[i].addEventListener("click", () => {
             zoneDetailOpen(i);
             if (screenWidth < widthDesktop) {
                 stopScroll();
-            }   
+            }
         }); 
     }
 }
 
 function zoneDetailOpen(el){
     zonesDetails[el].classList.toggle("open");
+}
+
+if (btnArrow && zonesContainers) {
+    for (let i = 0; i < btnsDetails.length; i++) {
+        //pour fermer avec l'arrow
+        btnArrow[i].addEventListener("click", () => {
+            zoneDetailOpen(i);
+            zoneContainerClose(i);
+        }); 
+    }
+}
+
+function zoneContainerClose(el){
+    zonesContainers[el].classList.toggle("open");
 }
 
 

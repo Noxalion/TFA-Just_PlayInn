@@ -210,26 +210,54 @@
 
 @media (min-width: 1000px) {
     .details{
-        display: none;
-        position: initial;
-        z-index: 30;
-        overflow: scroll;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        padding-left: 24px;
+        position: absolute;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-left: 0;
         padding-right: 24px;
-        background: $color-bg-blue;
-        pointer-events: none;
+        margin-bottom: 5px;
+        border-top: 2px solid $color-text-highlight;
+        border-left: 2px solid $color-text-highlight;
+        border-bottom: 2px solid $color-text-highlight;
     
-        transform: none;
-        transition: 0.8s cubic-bezier( 0.11, 0.99, 0.49, 1 );
-    
-        &.open{
-            pointer-events: all;
-            transform: translateX(0);
-            transition: 0.8s cubic-bezier( 0.11, 0.99, 0.49, 1 );
+        transform: translateX(calc(100% + 36px));
+        box-shadow: -3px 3px 0px $color-text-highlight;
+        border-radius: 48px 0 0 48px;
+
+        &Container{
+            pointer-events: none;
+            position: absolute;
+            overflow: hidden;
+            top: 48px;
+            width: calc(100% + 24px);
+            height: calc(100vh - 96px);
+            display: grid;
+            grid-template-columns: repeat(13, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 18px;
+
+            .btnArrowContainer{
+                align-self: center;
+                left: -32px;
+                z-index: 40;
+                position: relative;
+                pointer-events: none;
+                transform: translateX(calc(100% + 36px));
+                transition: 0.8s cubic-bezier( 0.11, 0.99, 0.49, 1 );
+            }
+
+            &.open{
+                .btnArrowContainer{
+                    transform: translateX(0);
+                    transition: 0.8s cubic-bezier( 0.11, 0.99, 0.49, 1 );
+                }
+            }
+        }
+    }
+
+    @media (max-height: 899px) {
+        .detailsContainer--adaptedSmallPc{
+            top: 216px;
         }
     }
     

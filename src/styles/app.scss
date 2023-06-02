@@ -111,6 +111,11 @@ body{
                 background-image: url(../assets/images/sections/close-details-hover.svg);
             }
         }
+
+        &Arrow{
+            display: none;
+            pointer-events: none;
+        }
     }
 
     &Slider{
@@ -200,6 +205,12 @@ body{
     
     .highlight_Paragraph{
         font-size: 22px;
+
+        &--desactivated{
+            color: $color-text;
+            font-family: $text-simple;
+            font-size: 18px;
+        }
     }
     
     .btn{
@@ -209,11 +220,33 @@ body{
             }
             
             &Close{
-                margin-left: calc(100% - 100px);
-                width: 120px;
-                height: 120px;
+                display: none;
+                pointer-events: none;
+            }
+
+            &Arrow{
+                pointer-events: all;
+                display: block;
+                z-index: 40;
+                top: 0px;
+                left: 0;
+                margin-left: 0;
+                font-size: 0;
+                width: 63px;
+                height: 144px;
+                border: none;
+                background-image: url(../assets/images/sections/arrow-close.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: transparent;
+                filter: drop-shadow(-3px 4px 0px $color-text-highlight);
+
+                &:hover, &:focus, &:active{
+                    background-image: url(../assets/images/sections/arrow-close-hover.svg);
+                }
             }
         }
+        
     
         &Slider{
             &--left, &--right{

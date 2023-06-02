@@ -58,6 +58,7 @@ let btnArrow = document.querySelectorAll(".btn--detailsArrow");
 let zonesContainers = document.querySelectorAll(".detailsContainer");
 let btnsDetails = document.querySelectorAll(".btn--detailsOpen");
 let btnsFerme = document.querySelectorAll(".btn--detailsClose");
+let anchorDetails = document.querySelectorAll(".anchorDetails");
 
 if (zonesDetails && btnsDetails && btnsFerme) {
     for (let i = 0; i < btnsDetails.length; i++) {
@@ -67,7 +68,8 @@ if (zonesDetails && btnsDetails && btnsFerme) {
             if (screenWidth < widthDesktop) {
                 stopScroll();
             }else{
-                zoneContainerClose(i);
+                zoneContainerOpen(i);
+                anchorDetails[i].classList.add("anchorDetails--active");
             }
         });
         //pour fermer
@@ -85,19 +87,29 @@ function zoneDetailOpen(el){
 }
 
 if (btnArrow && zonesContainers) {
-    for (let i = 0; i < btnsDetails.length; i++) {
+    for (let i = 0; i < btnArrow.length; i++) {
         //pour fermer avec l'arrow
         btnArrow[i].addEventListener("click", () => {
             zoneDetailOpen(i);
-            zoneContainerClose(i);
+            zoneContainerOpen(i);
+            anchorDetails[i].classList.remove("anchorDetails--active");
         }); 
     }
 }
 
-function zoneContainerClose(el){
+function zoneContainerOpen(el){
     zonesContainers[el].classList.toggle("open");
 }
 
+if (anchorDetails && zonesContainers) {
+    for (let i = 0; i < anchorDetails.length; i++) {
+        anchorDetails[i].addEventListener("click", () => {
+            zonesDetails[i].classList.add("open");
+            zonesContainers[i].classList.add("open");
+            anchorDetails[i].classList.add("anchorDetails--active");
+        }); 
+    }
+}
 
 
 

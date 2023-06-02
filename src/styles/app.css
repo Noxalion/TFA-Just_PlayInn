@@ -313,14 +313,20 @@
     filter: drop-shadow(-3px 3px 0px #260F26);
     width: 29px;
     height: 25px;
-    left: 50px;
-    bottom: -6px;
+    left: 48px;
+    bottom: -8px;
     position: absolute;
     opacity: 0.7;
+    transition: 0.3s;
   }
   .nav__el .anchorDetails:hover, .nav__el .anchorDetails:focus, .nav__el .anchorDetails:active {
     opacity: 1;
     transition: 0.3s;
+  }
+  .nav__el .anchorDetails--active {
+    transition: 0.3s;
+    opacity: 1;
+    background-image: url(../assets/images/sections/polygone-active.svg);
   }
   .nav__el .anchor {
     position: relative;

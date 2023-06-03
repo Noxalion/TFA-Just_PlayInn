@@ -331,62 +331,12 @@
     }
 
     .imgDetails{
-        max-width: none;
-        max-height: none;
-        position: absolute;
-
         &--magasin{
-            width: 90%;
-            margin-left: 5%;
-            top: 20%;
+            top: 18%;
         }
 
         &--casque{
-            width: 90%;
-            margin-left: 5%;
-            top: 74%;
-        }
-
-        &--portedocument{
-            width: 80%;
-            margin-left: 10%;
-            top: 25%;
-        }
-
-        &--chapeaux{
-            top: 33%;
-        }
-
-        &--crayon{
-            width: 70%;
-            margin-left: 15%;
-            top: 95%;
-        }
-        
-        &--chrono{
-            position: relative;
-            grid-row: 3;
-            width: 80%;
-            margin-left: 10%;
-            align-self: center;
-        }
-
-        &--amongus{
-            width: 90%;
-            margin-left: 5%;
-            top: 90%;
-        }
-
-        &--biblio{
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-        }
-
-        &--loupe{
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
+            top: 72%;
         }
     }
 

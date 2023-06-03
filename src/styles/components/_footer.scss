@@ -22,7 +22,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .footer__link{
+    &__link{
         color: $color-text-highlight;
 
         &:hover, &:focus, &:focus{
@@ -55,7 +55,6 @@
         left: 0;
         right: 0;
         padding: 48px 0;
-        font-size: 20px;
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         column-gap: 18px;
@@ -75,6 +74,16 @@
             &__elGrid{
                 justify-self: end;
             }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .footer{
+        column-gap: 24px;
+    
+        &__list{
+            column-gap: 24px;
         }
     }
 }

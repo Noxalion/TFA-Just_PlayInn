@@ -14,7 +14,23 @@
     background-repeat: no-repeat;
     background-position: 20px 140px;
     background-size: 115%;
+    z-index: 100;
     
+    &::before{
+        content: "";
+        color: $color-bg;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-color: $color-bg-purple;
+        pointer-events: none;
+        z-index: 1000;
+
+        animation: pinkAnim 1.5s cubic-bezier( 0.4, 0, 0.16, 0.85 );
+    }
 
     &__title{
         display: block;
@@ -26,6 +42,7 @@
     }
 
     &__subtitle{
+        z-index: 100;
         font-family: $text-home;
         font-size: 24px;
         text-align: center;
@@ -35,6 +52,12 @@
         background-image: url(../assets/images/sections/arrow.svg);
         background-repeat: no-repeat;
         background-position: center bottom;
+    }
+}
+
+@keyframes pinkAnim {
+    from{
+        opacity: 1;
     }
 }
 
@@ -84,6 +107,7 @@
         background-image: url(../assets/images/sections/accueil_desktop.svg);
         background-position: center -96px;
         background-size: 120%;
+        z-index: 1000;
         
     
         &__title{
@@ -96,6 +120,7 @@
         }
     
         &__subtitle{
+            z-index: 100;
             position: absolute;
             width: calc(100% - 48px);
             top: 92.5%;

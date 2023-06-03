@@ -250,6 +250,8 @@ function swapEx(direction) {
 //animation du menu, de la nav et du pion
 const navEls = gsap.utils.toArray(".nav__el");
 const listID = ["#introduction", "#rencontres", "#problemes", "#hypotheses", "#solutions", "#recherches", "#presentation", "#conclusion"];
+const imgsPrincipales = document.querySelectorAll(".imgSection");
+const imgsDeco = document.querySelectorAll(".imgDeco");
 
 
 pionAnim();
@@ -264,6 +266,9 @@ if (screenWidth < widthDesktop) {
     appartionNav();
 }
 
+for (let i = 0; i < listID.length; i++) {
+    apparitionContent(listID[i], i);
+}
 
 
 
@@ -298,6 +303,7 @@ function appartionMenu() {
     gsap.from(burgerMenu, {
         duration: 0.3,
         opacity: 0,
+        ease: "power1.out",
         pointerEvents: "none",
         scrollTrigger:{
             trigger: listID[0],
@@ -312,6 +318,7 @@ function appartionNav() {
     gsap.from(menuContent, {
         duration: 0.3,
         opacity: 0,
+        ease: "power1.out",
         pointerEvents: "none",
         scrollTrigger:{
             trigger: listID[0],
@@ -320,5 +327,72 @@ function appartionNav() {
             end: "bottom 20%"
         }
     })
+}
+
+function apparitionContent(el, index){
+    gsap.from(el, {
+        duration: 1,
+        opacity: 0,
+        ease: "power1.out",
+        scrollTrigger:{
+            trigger: el,
+            toggleActions: "play none none none",
+            start: "top 80%"
+        }
+    })
+
+    if (index < imgsDeco.length) {
+        gsap.from(imgsDeco[index], {
+            duration: 0.7,
+            opacity: 0,
+            ease: "power1.out",
+            scrollTrigger:{
+                trigger: imgsDeco[index],
+                toggleActions: "play none none none",
+                start: "top 80%"
+            }
+        })
+    }
+
+    if (screenWidth >= widthDesktop) {
+        if (index == 4) {
+            gsap.from(imgsPrincipales[index], {
+                duration: 0.8,
+                delay: 0.1,
+                rotateZ: -3,
+                ease: "power1.out",
+                scrollTrigger:{
+                    trigger: el,
+                    toggleActions: "play none none none",
+                    start: "top 80%"
+                }
+            })
+            
+        }else if(index == 6 || index == 1){
+            gsap.from(imgsPrincipales[index], {
+                duration: 0.8,
+                rotateZ: 177,
+                delay: 0.1,
+                ease: "power1.out",
+                scrollTrigger:{
+                    trigger: el,
+                    toggleActions: "play none none none",
+                    start: "top 80%"
+                }
+            })
+        }else {
+            gsap.from(imgsPrincipales[index], {
+                duration: 0.8,
+                rotateZ: 3,
+                delay: 0.1,
+                ease: "power1.out",
+                scrollTrigger:{
+                    trigger: el,
+                    toggleActions: "play none none none",
+                    start: "top 80%"
+                }
+            })
+        }
+    }
 }
 

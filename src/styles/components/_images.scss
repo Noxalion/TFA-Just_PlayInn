@@ -251,8 +251,8 @@
     }
     
     .feteContainer{
-        width: calc(100% + 48px);
-        left: -24px;
+        width: 100%;
+        left: 0;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         column-gap: 18px;
@@ -318,5 +318,114 @@
         padding-left: 0;
         position: absolute;
         top: 8%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .imgDeco{
+        padding-top: 48px;
+        
+        &--cartes{
+            padding-top: 50px;
+        }
+    }
+
+    .imgDetails{
+        max-width: none;
+        max-height: none;
+        position: absolute;
+
+        &--magasin{
+            width: 90%;
+            margin-left: 5%;
+            top: 20%;
+        }
+
+        &--casque{
+            width: 90%;
+            margin-left: 5%;
+            top: 74%;
+        }
+
+        &--portedocument{
+            width: 80%;
+            margin-left: 10%;
+            top: 25%;
+        }
+
+        &--chapeaux{
+            top: 33%;
+        }
+
+        &--crayon{
+            width: 70%;
+            margin-left: 15%;
+            top: 95%;
+        }
+        
+        &--chrono{
+            position: relative;
+            grid-row: 3;
+            width: 80%;
+            margin-left: 10%;
+            align-self: center;
+        }
+
+        &--amongus{
+            width: 90%;
+            margin-left: 5%;
+            top: 90%;
+        }
+
+        &--biblio{
+            position: relative;
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        &--loupe{
+            position: relative;
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+
+    .chargeContainer{
+        position: absolute;
+        width: calc(100% + 96px);
+        top: 22%;
+        left: -24px;
+    
+        &__fond{
+            border-radius: 72px 0 0 72px;
+        }
+    }
+    .imgCharge{
+        width: calc(100% - 96px);
+        transform: scale(-1,1) translateX(-24px);
+    }
+    
+    .feteContainer{
+        column-gap: 24px;
+        
+        &__fond{
+            border-radius: 72px;
+            height: 44%;
+            top: 56%;
+        }
+    }
+    .imgFete{
+        grid-column: 2 / 8;
+        width: 95%;
+        transform: translateX(18px);
+        padding-bottom: 24px;
+    }
+
+    .imgLoup{
+        top: -16%;
+    }
+
+    .imgDe{
+        top: 12%;
     }
 }

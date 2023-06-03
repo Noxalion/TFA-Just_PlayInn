@@ -262,3 +262,43 @@ body{
         }
     }
 }
+
+@media (min-width: 1920px) {
+    body{
+        font-size: 20px;
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+    
+    .title{
+        font-size: 60px;
+        line-height: 62px;
+    }
+    
+    .highlight_Paragraph{
+        font-size: 24px;
+
+        &--desactivated{
+            color: $color-text;
+            font-family: $text-simple;
+            font-size: 20px;
+        }
+    }
+    
+    .btn{
+        &--details{
+            &Arrow{
+                width: 63px;
+                height: 144px;
+            }
+        }
+        
+    
+        &Slider{
+            &--left, &--right{
+                width: 63px;
+                height: 72px;
+            }
+        }
+    }
+}

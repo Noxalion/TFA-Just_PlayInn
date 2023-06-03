@@ -130,3 +130,31 @@
         }
     }
 }
+
+@media (min-width: 1920px) {
+    .project-home{
+        left: -72px;
+        right: -72px;
+    
+        padding-top: 54px;
+        padding-left: 72px;
+        padding-right: 72px;
+        height: 1320px;
+        background-position: center -138px;
+        background-size: 120%;
+        
+    
+        &__title{
+            width: 70%;
+            height: 170px;
+        }
+    
+        &__subtitle{
+            width: calc(100% - 144px);
+            font-size: 53px;
+            top: 90%;
+            font-size: 53px;
+            padding-bottom: 18px;
+        }
+    }
+}

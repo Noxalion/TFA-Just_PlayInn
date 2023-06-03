@@ -359,7 +359,7 @@ function apparitionContent(el, index){
             gsap.from(imgsPrincipales[index], {
                 duration: 0.8,
                 delay: 0.1,
-                rotateZ: -3,
+                rotateZ: -2,
                 ease: "power1.out",
                 scrollTrigger:{
                     trigger: el,
@@ -371,7 +371,7 @@ function apparitionContent(el, index){
         }else if(index == 6 || index == 1){
             gsap.from(imgsPrincipales[index], {
                 duration: 0.8,
-                rotateZ: 177,
+                rotateZ: 178,
                 delay: 0.1,
                 ease: "power1.out",
                 scrollTrigger:{
@@ -383,7 +383,7 @@ function apparitionContent(el, index){
         }else {
             gsap.from(imgsPrincipales[index], {
                 duration: 0.8,
-                rotateZ: 3,
+                rotateZ: 2,
                 delay: 0.1,
                 ease: "power1.out",
                 scrollTrigger:{

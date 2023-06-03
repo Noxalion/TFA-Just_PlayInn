@@ -229,7 +229,7 @@
         margin-bottom: 48px;
 
         &--smaller{
-            margin-bottom: 24px;
+            margin-bottom: 18px;
         }
 
         &--desactivated{
@@ -243,19 +243,18 @@
         &--bigger{
             margin-bottom: 72px;
         }
-    }
-    
-    .spaceForAnchor{
-        padding-top: 360px;
-    }
-    
-    .bigSpaceUnder{
-        margin-top: 312px;
+
+        &--adapted{
+            &IntroDesktop{
+                margin-bottom: 52px;
+            }
+            &RencDesktop{
+                margin-bottom: 124px;
+            }
+        }
     }
     
     .bigSpaceBelow{
-        margin-bottom: 312px;
-
         &--smaller{
             margin-bottom: 96px;
         }

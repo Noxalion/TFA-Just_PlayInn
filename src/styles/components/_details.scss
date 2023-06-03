@@ -223,7 +223,7 @@
         border-bottom: 2px solid $color-text-highlight;
 
         transform: translateX(calc(100% + 36px));
-        box-shadow: -3px 3px 0px $color-text-highlight;
+        box-shadow: -4px 4px 0px $color-text-highlight;
         border-radius: 48px 0 0 48px;
 
         display: grid;
@@ -300,7 +300,7 @@
 
             &-thumb{
                 border-radius: 18px;
-                background-color: $color-footer;
+                background-color: $color-bg-purple;
             }
         }
     }
@@ -411,18 +411,8 @@
         }
 
         &__el{
-
             &--probs{
                 column-gap: 24px;
-            }
-
-            &--upper{
-                position: relative;
-                top: -100px;
-
-                &:last-child{
-                    height: 24px;
-                }
             }
         }
     }
@@ -446,5 +436,15 @@
     .Example__title{
         font-size: 24px;
         margin-bottom: 18px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .details{
+        border: 2px solid $color-text-highlight;
+
+        &Container{
+            max-height: 1080px;
+        }
     }
 }

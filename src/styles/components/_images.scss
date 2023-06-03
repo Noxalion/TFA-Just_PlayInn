@@ -322,13 +322,6 @@
 }
 
 @media (min-width: 1920px) {
-    .imgDeco{
-        padding-top: 48px;
-        
-        &--cartes{
-            padding-top: 50px;
-        }
-    }
 
     .imgDetails{
         &--magasin{
@@ -372,10 +365,26 @@
     }
 
     .imgLoup{
-        top: -16%;
+        top: -18%;
     }
 
     .imgDe{
-        top: 12%;
+        top: 8%;
+    }
+}
+
+@media (min-width: 1921px) {
+    .maxWitdhImg{
+        max-width: 576px;
+
+        &--charge{
+            max-width: 792px;
+        }
+
+        &--fete{
+            max-width: 936px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }

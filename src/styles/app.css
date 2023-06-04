@@ -1794,6 +1794,13 @@
   font-family: "congenial";
 }
 
+.video {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: -3px 3px 0px #260F26;
+  border: 2px solid #260F26;
+}
+
 @media (min-width: 700px) {
   .list--credits {
     margin-left: 60px;
@@ -1843,6 +1850,10 @@
   .notOnDesktop {
     display: none;
     pointer-events: none;
+  }
+  .video {
+    border-radius: 48px;
+    box-shadow: -4px 4px 0px #260F26;
   }
 }
 @media (min-width: 1920px) {

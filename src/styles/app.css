@@ -1092,6 +1092,7 @@
   .details::-webkit-scrollbar-thumb {
     border-radius: 18px;
     background-color: #DFB0FF;
+    opacity: 30%;
   }
   .listProb {
     display: grid;

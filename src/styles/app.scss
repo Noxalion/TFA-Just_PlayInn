@@ -231,11 +231,11 @@ body{
         &::-webkit-scrollbar{
             border-radius: 18px;
             width: 9px;
-            background-color: #F0EFFF;
+            background-color: $color-bg-blue;
 
             &-track{
                 border-radius: 18px;
-                -webkit-box-shadow: inset 0 0 2px #616CD0;
+                -webkit-box-shadow: inset 0 0 2px $color-button;
             }
 
             &-thumb{

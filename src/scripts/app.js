@@ -331,13 +331,13 @@ function appartionNav() {
 
 function apparitionContent(el, index){
     gsap.from(el, {
-        duration: 1,
+        duration: 0.8,
         opacity: 0,
         ease: "power1.out",
         scrollTrigger:{
             trigger: el,
             toggleActions: "play none none none",
-            start: "top 80%"
+            start: "10% 80%"
         }
     })
 
@@ -364,7 +364,7 @@ function apparitionContent(el, index){
                 scrollTrigger:{
                     trigger: el,
                     toggleActions: "play none none none",
-                    start: "top 80%"
+                    start: "10% 80%"
                 }
             })
             
@@ -377,7 +377,7 @@ function apparitionContent(el, index){
                 scrollTrigger:{
                     trigger: el,
                     toggleActions: "play none none none",
-                    start: "top 80%"
+                    start: "10% 80%"
                 }
             })
         }else {
@@ -389,7 +389,7 @@ function apparitionContent(el, index){
                 scrollTrigger:{
                     trigger: el,
                     toggleActions: "play none none none",
-                    start: "top 80%"
+                    start: "10% 80%"
                 }
             })
         }

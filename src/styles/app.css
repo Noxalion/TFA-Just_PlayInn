@@ -481,6 +481,10 @@
   z-index: 1000;
   animation: pinkAnim 1.5s cubic-bezier(0.4, 0, 0.16, 0.85);
 }
+.project-home__bg {
+  display: none;
+  pointer-events: none;
+}
 .project-home__title {
   display: block;
   font-size: 0;
@@ -538,11 +542,31 @@
     padding-left: 24px;
     padding-right: 24px;
     margin-top: 0;
-    height: 1080px;
-    background-image: url(../assets/images/sections/accueil_desktop.svg);
-    background-position: center -96px;
-    background-size: 120%;
+    height: 120vh;
+    background-position: center 22vh;
+    background-size: 68vh;
     z-index: 1000;
+  }
+  .project-home__bg {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 25vw;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+  }
+  .project-home__bg--left {
+    left: 0;
+    background-size: 110%;
+    background-position: 320% -10vh;
+    background-image: url(../assets/images/sections/accueil_bg--left.svg);
+  }
+  .project-home__bg--right {
+    right: 0;
+    background-size: 92%;
+    background-position: 470% -10vh;
+    background-image: url(../assets/images/sections/accueil_bg--right.svg);
   }
   .project-home__title {
     margin-left: auto;
@@ -569,23 +593,13 @@
     padding-top: 54px;
     padding-left: 72px;
     padding-right: 72px;
-    height: 1320px;
-    background-position: center -144px;
+    background-position: center 18vh;
+    background-size: 70vh;
   }
-}
-@media (min-width: 1920px) and (max-height: 1079px) {
-  .project-home {
-    background-size: 100%;
-    background-position: center -96px;
-  }
-}
-@media (min-width: 1920px) {
   .project-home__title {
     width: 70%;
     height: 170px;
   }
-}
-@media (min-width: 1920px) {
   .project-home__subtitle {
     width: calc(100% - 144px);
     font-size: 53px;
@@ -597,9 +611,14 @@
 @media (min-width: 1921px) {
   .project-home {
     height: calc(120vh - 54px);
-    background-size: 100%;
-    background-position: -24px -138px;
-    border-radius: 72px;
+  }
+  .project-home__bg--left {
+    background-size: 72%;
+    background-position: 0% -6vh;
+  }
+  .project-home__bg--right {
+    background-size: 59%;
+    background-position: 100% -6vh;
   }
   .project-home__title {
     max-width: 1245px;

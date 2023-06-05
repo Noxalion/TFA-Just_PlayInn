@@ -32,6 +32,11 @@
         animation: pinkAnim 1.5s cubic-bezier( 0.4, 0, 0.16, 0.85 );
     }
 
+    &__bg{
+        display: none;
+        pointer-events: none;
+    }
+
     &__title{
         display: block;
         font-size: 0;
@@ -103,12 +108,33 @@
         padding-left: 24px;
         padding-right: 24px;
         margin-top: 0;
-        height: 1080px;
-        background-image: url(../assets/images/sections/accueil_desktop.svg);
-        background-position: center -96px;
-        background-size: 120%;
+        height: 120vh;
+        background-position: center 22vh;
+        background-size: 68vh;
         z-index: 1000;
         
+        &__bg{
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 25vw;
+            top: 0;
+            bottom: 0;
+            background-repeat: no-repeat;
+            
+            &--left{
+                left: 0;
+                background-size: 110%;
+                background-position: 320% -10vh;
+                background-image: url(../assets/images/sections/accueil_bg--left.svg);
+            }
+            &--right{
+                right: 0;
+                background-size: 92%;
+                background-position: 470% -10vh;
+                background-image: url(../assets/images/sections/accueil_bg--right.svg);
+            }
+        }
     
         &__title{
             margin-left: auto;
@@ -139,13 +165,8 @@
         padding-top: 54px;
         padding-left: 72px;
         padding-right: 72px;
-        height: 1320px;
-        background-position: center -144px;
-        
-        @media (max-height: 1079px) {
-            background-size: 100%;
-            background-position: center -96px;
-        }
+        background-position: center 18vh;
+        background-size: 70vh;
         
     
         &__title{
@@ -166,9 +187,17 @@
 @media (min-width: 1921px) {
     .project-home{
         height: calc(120vh - 54px);
-        background-size: 100%;
-        background-position: -24px -138px;
-        border-radius: 72px;
+
+        &__bg{         
+            &--left{
+                background-size: 72%;
+                background-position: 0% -6vh;
+            }
+            &--right{
+                background-size: 59%;
+                background-position: 100% -6vh;
+            }
+        }
         
     
         &__title{
